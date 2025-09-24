@@ -493,14 +493,6 @@
         <title value="Architecture"/>
         <generation value="markdown"/>
       </page>
-      <page>
-        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
-          <valueUrl value="background.html"/>
-        </extension>
-        <nameUrl value="background.html"/>
-        <title value="Background"/>
-        <generation value="markdown"/>
-      </page>
     </page>
     <parameter>
       <code value="path-resource"/>

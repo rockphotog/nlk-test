@@ -650,15 +650,6 @@
         "nameUrl" : "architecture.html",
         "title" : "Architecture",
         "generation" : "markdown"
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
-          "valueUrl" : "background.html"
-        }],
-        "nameUrl" : "background.html",
-        "title" : "Background",
-        "generation" : "markdown"
       }]
     },
     "parameter" : [{

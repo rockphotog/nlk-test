@@ -33,9 +33,6 @@ parameters:
   show-inherited-invariants: false
   usage-stats-opt-out: false
   logging: progress
-  
-# Template and pages configuration  
-template: hl7.fhir.template#current
 
 # Resource configuration
 resources:

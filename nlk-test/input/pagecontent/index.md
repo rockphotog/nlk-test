@@ -8,6 +8,14 @@ This Implementation Guide publishes the Norwegian Laboratory Codebook as a stand
 
 The NLK CodeSystem provides a complete, authoritative terminology for laboratory medicine in Norway, covering all major medical domains with **11,391 unique laboratory codes**.
 
+## CodeSystem Structure
+
+The following diagram illustrates the core structure of the Norwegian Laboratory Codebook as a FHIR CodeSystem:
+
+![NLK CodeSystem Overview](nlk-overview.svg)
+
+*Figure 1: Norwegian Laboratory Codebook CodeSystem structure showing the relationship between FHIR base classes, medical domains, and laboratory concepts.*
+
 ## Key Features
 
 ### 🧬 Comprehensive Coverage

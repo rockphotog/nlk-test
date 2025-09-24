@@ -1,8 +1,8 @@
-@startuml NLK-CodeSystem-Structure
+@startuml nlk-codesystem
 
 title Norwegian Laboratory Codebook (NLK) - CodeSystem Structure
 
-package "FHIR R4 Base" #F5F5F5 {
+package "FHIR R4 Base" {
     abstract class CodeSystem {
         +url: uri
         +version: string
@@ -37,7 +37,7 @@ package "FHIR R4 Base" #F5F5F5 {
     }
 }
 
-package "Norwegian Laboratory Codebook" #E1F5FE {
+package "Norwegian Laboratory Codebook" {
     class NorskLaboratoriekodeverk {
         +id: string
         +url: uri
@@ -88,7 +88,7 @@ package "Norwegian Laboratory Codebook" #E1F5FE {
     }
 }
 
-package "Medical Domains" #E8F5E8 {
+package "Medical Domains" {
     class MedicalDomain {
         <<enumeration>>
         MEDISINSK_BIOKJEMI
@@ -159,7 +159,7 @@ package "Medical Domains" #E8F5E8 {
     }
 }
 
-package "FHIR Integration" #FFF9C4 {
+package "FHIR Integration" {
     class ObservationProfile {
         +code: CodeableConcept
         +system: uri
@@ -177,7 +177,7 @@ package "FHIR Integration" #FFF9C4 {
     }
 }
 
-package "Norwegian Health Context" #FCE4EC {
+package "Norwegian Health Context" {
     class HL7Norway {
         +basisPackage: string
         +version: string
@@ -195,14 +195,13 @@ package "Norwegian Health Context" #FCE4EC {
     }
 }
 
-' Relationships
 CodeSystem <|-- NorskLaboratoriekodeverk
 Property <|-- NLKProperty
 Concept <|-- NLKConcept
 
-NorskLaboratoriekodeverk *-- "11391" NLKConcept : contains
-NorskLaboratoriekodeverk *-- "11" NLKProperty : defines
-NLKConcept --> MedicalDomain : categorizedBy
+NorskLaboratoriekodeverk *-- NLKConcept
+NorskLaboratoriekodeverk *-- NLKProperty
+NLKConcept --> MedicalDomain
 
 MedicalDomain <|.. MedisinskBiokjemi
 MedicalDomain <|.. ImmunologiTransfusjon
@@ -211,30 +210,29 @@ MedicalDomain <|.. KliniskFarmakologi
 MedicalDomain <|.. MedisinskGenetikk
 MedicalDomain <|.. Patologi
 
-ObservationProfile --> NorskLaboratoriekodeverk : uses
-DiagnosticReportProfile --> ObservationProfile : contains
-NorskLaboratoriekodeverk --> HL7Norway : buildUpon
-NorwegianHealthcare --> NorskLaboratoriekodeverk : standardizes
+ObservationProfile --> NorskLaboratoriekodeverk
+DiagnosticReportProfile --> ObservationProfile
+NorskLaboratoriekodeverk --> HL7Norway
+NorwegianHealthcare --> NorskLaboratoriekodeverk
 
-' Cardinalities and notes
 note right of NorskLaboratoriekodeverk
-  **Version**: 7280.77
-  **Total Codes**: 11,391
-  **Active**: 9,679 codes
-  **Historical**: 1,712 codes
-  **Status**: Experimental
+Version: 7280.77
+Total Codes: 11,391
+Active: 9,679 codes
+Historical: 1,712 codes
+Status: Experimental
 end note
 
 note right of MedicalDomain
-  Six major medical specialties
-  covering comprehensive
-  laboratory terminology
+Six major medical specialties
+covering comprehensive
+laboratory terminology
 end note
 
 note bottom of ObservationProfile
-  FHIR R4 Observations using
-  NLK codes for laboratory
-  test identification
+FHIR R4 Observations using
+NLK codes for laboratory
+test identification
 end note
 
 @enduml

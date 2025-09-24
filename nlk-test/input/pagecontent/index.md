@@ -12,7 +12,11 @@ The NLK CodeSystem provides a complete, authoritative terminology for laboratory
 
 The following diagram illustrates the core structure of the Norwegian Laboratory Codebook as a FHIR CodeSystem:
 
+&nbsp;
+
 ![NLK CodeSystem Overview](nlk-overview.svg)
+
+&nbsp;
 
 *Figure 1: Norwegian Laboratory Codebook CodeSystem structure showing the relationship between FHIR base classes, medical domains, and laboratory concepts.*
 

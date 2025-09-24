@@ -1,0 +1,51 @@
+@startuml nlk-codesystem-overview
+
+title NLK CodeSystem - Overview
+
+class CodeSystem {
+    +url: uri
+    +version: string
+    +count: unsignedInt
+}
+
+class NorskLaboratoriekodeverk {
+    +version: "7280.77"
+    +count: 11391
+    +activeCount: 9679
+}
+
+class MedicalDomain {
+    <<enumeration>>
+    MEDISINSK_BIOKJEMI
+    IMMUNOLOGI_TRANSFUSJON
+    MEDISINSK_MIKROBIOLOGI
+    KLINISK_FARMAKOLOGI
+    MEDISINSK_GENETIKK
+    PATOLOGI
+}
+
+class NLKConcept {
+    +code: string
+    +display: string
+    +isActive: boolean
+    +domain: MedicalDomain
+}
+
+class ObservationProfile {
+    +code: CodeableConcept
+    +system: uri
+}
+
+' Relationships
+CodeSystem <|-- NorskLaboratoriekodeverk
+NorskLaboratoriekodeverk *-- NLKConcept
+NLKConcept --> MedicalDomain
+ObservationProfile --> NorskLaboratoriekodeverk
+
+note right of NorskLaboratoriekodeverk
+Norwegian Laboratory Codebook
+11,391 laboratory codes
+6 medical domains
+end note
+
+@enduml

@@ -1,24 +1,58 @@
-name: Generate PlantUML
+name: Generate PlantUML Diagrams
+
 on:
   push:
-    branches:
-      - main
+    branches: [main]
+    paths:
+      - 'nlk-test/input/images/*.puml'
+      - '.github/workflows/plant-uml.yml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'nlk-test/input/images/*.puml'
   workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
 
 jobs:
   generate_plantuml:
     runs-on: ubuntu-latest
-    name: plantuml
+    name: Generate and commit PlantUML diagrams
+    
     steps:
-    - name: checkout
-      uses: actions/checkout@v4
-      with:
-        fetch-depth: 1
-    - name: plantuml
-      id: plantuml
-      uses: grassedge/generate-plantuml-action@v1.5
-      with:
-        path: nlk-test/input/images
-        message: "Render PlantUML files"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Verify PlantUML files exist
+        run: |
+          if [ -d "nlk-test/input/images" ]; then
+            echo "📁 Found images directory"
+            find nlk-test/input/images -name "*.puml" -type f
+          else
+            echo "❌ Images directory not found"
+            exit 1
+          fi
+      
+      - name: Generate PlantUML diagrams
+        id: plantuml
+        uses: grassedge/generate-plantuml-action@v1.5
+        with:
+          path: nlk-test/input/images
+          message: "📊 Auto-generate PlantUML diagrams [skip ci]"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Verify generated outputs
+        run: |
+          echo "🔍 Checking for generated diagram files..."
+          find nlk-test/input/images -name "*.png" -o -name "*.svg" | head -10
+          
+      - name: Summary
+        run: |
+          echo "✅ PlantUML diagram generation completed"
+          echo "📈 Generated diagrams available in nlk-test/input/images/"

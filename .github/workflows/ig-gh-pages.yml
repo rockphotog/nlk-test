@@ -1,15 +1,6 @@
 name: Build and Deploy FHIR IG to GitHub Pages
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'nlk-test/**'
-      - '.github/workflows/ig-gh-pages.yml'
-  pull_request:
-    branches: [main]
-    paths:
-      - 'nlk-test/**'
   workflow_dispatch:
     inputs:
       force_rebuild:

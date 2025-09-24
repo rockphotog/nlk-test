@@ -1,0 +1,238 @@
+@startuml nlk-codesystem
+
+title Norwegian Laboratory Codebook (NLK) - CodeSystem Structure
+
+package "FHIR R4 Base" {
+    abstract class CodeSystem {
+        +url: uri
+        +version: string
+        +status: code
+        +experimental: boolean
+        +date: dateTime
+        +publisher: string
+        +jurisdiction: CodeableConcept
+        +caseSensitive: boolean
+        +content: code
+        +count: unsignedInt
+        +property: Property[]
+        +concept: Concept[]
+    }
+
+    class Property {
+        +code: code
+        +description: string
+        +type: code
+    }
+
+    class Concept {
+        +code: code
+        +display: string
+        +definition: string
+        +property: ConceptProperty[]
+    }
+
+    class ConceptProperty {
+        +code: code
+        +value: Element
+    }
+}
+
+package "Norwegian Laboratory Codebook" {
+    class NorskLaboratoriekodeverk {
+        +id: string
+        +url: uri
+        +version: string
+        +status: code
+        +count: 11391
+        +activeCount: 9679
+        +historicalCount: 1712
+        --
+        +getCodesByDomain(domain): Concept[]
+        +getActiveCodes(): Concept[]
+        +getHistoricalCodes(): Concept[]
+        +validateCode(code): boolean
+    }
+
+    class NLKProperty {
+        +validFrom: dateTime
+        +validTo: dateTime
+        +replacedBy: code
+        +changeDate: dateTime
+        +codeDefinition: string
+        +component: string
+        +componentSpec: string
+        +system: string
+        +property: string
+        +method: string
+        +specimen: string
+        +unit: string
+    }
+
+    class NLKConcept {
+        +code: string
+        +display: string
+        +isActive: boolean
+        +domain: MedicalDomain
+        +validFrom: dateTime
+        +validTo: dateTime
+        +component: string
+        +system: string
+        +property: string
+        +method: string
+        +specimen: string
+        +unit: string
+        --
+        +isHistorical(): boolean
+        +getReplacementCode(): string
+        +getDomainInfo(): MedicalDomain
+    }
+}
+
+package "Medical Domains" {
+    class MedicalDomain {
+        <<enumeration>>
+        MEDISINSK_BIOKJEMI
+        IMMUNOLOGI_TRANSFUSJON
+        MEDISINSK_MIKROBIOLOGI
+        KLINISK_FARMAKOLOGI
+        MEDISINSK_GENETIKK
+        PATOLOGI
+        --
+        +getCodeCount(): int
+        +getDisplayName(): string
+        +getDescription(): string
+    }
+
+    class MedisinskBiokjemi {
+        +codeCount: 2881
+        +displayName: string
+        +description: string
+        --
+        +getClinicalChemistryTests(): NLKConcept[]
+        +getMetabolicMarkers(): NLKConcept[]
+    }
+
+    class ImmunologiTransfusjon {
+        +codeCount: 3231
+        +displayName: string
+        +description: string
+        --
+        +getImmunologyTests(): NLKConcept[]
+        +getTransfusionTests(): NLKConcept[]
+    }
+
+    class MedisinskMikrobiologi {
+        +codeCount: 2547
+        +displayName: string
+        +description: string
+        --
+        +getBacteriologyTests(): NLKConcept[]
+        +getVirologyTests(): NLKConcept[]
+        +getMycologyTests(): NLKConcept[]
+    }
+
+    class KliniskFarmakologi {
+        +codeCount: 2642
+        +displayName: string
+        +description: string
+        --
+        +getDrugLevelTests(): NLKConcept[]
+        +getToxicologyTests(): NLKConcept[]
+    }
+
+    class MedisinskGenetikk {
+        +codeCount: 67
+        +displayName: string
+        +description: string
+        --
+        +getGeneticTests(): NLKConcept[]
+        +getCytogeneticTests(): NLKConcept[]
+    }
+
+    class Patologi {
+        +codeCount: 27
+        +displayName: string
+        +description: string
+        --
+        +getHistopathologyTests(): NLKConcept[]
+        +getCytopathologyTests(): NLKConcept[]
+    }
+}
+
+package "FHIR Integration" {
+    class ObservationProfile {
+        +code: CodeableConcept
+        +system: uri
+        --
+        +validateNLKCode(): boolean
+        +getLabTestInfo(): NLKConcept
+    }
+
+    class DiagnosticReportProfile {
+        +code: CodeableConcept[]
+        +result: Observation[]
+        --
+        +addNLKObservation(nlkCode): void
+        +validateAllCodes(): boolean
+    }
+}
+
+package "Norwegian Health Context" {
+    class HL7Norway {
+        +basisPackage: string
+        +version: string
+        --
+        +getNorwegianProfiles(): Profile[]
+        +getJurisdictionRules(): CodeableConcept[]
+    }
+
+    class NorwegianHealthcare {
+        +healthRegions: Region[]
+        +nationalRegistries: Registry[]
+        --
+        +standardizeLabTerminology(): void
+        +enableInteroperability(): void
+    }
+}
+
+CodeSystem <|-- NorskLaboratoriekodeverk
+Property <|-- NLKProperty
+Concept <|-- NLKConcept
+
+NorskLaboratoriekodeverk *-- NLKConcept
+NorskLaboratoriekodeverk *-- NLKProperty
+NLKConcept --> MedicalDomain
+
+MedicalDomain <|.. MedisinskBiokjemi
+MedicalDomain <|.. ImmunologiTransfusjon
+MedicalDomain <|.. MedisinskMikrobiologi
+MedicalDomain <|.. KliniskFarmakologi
+MedicalDomain <|.. MedisinskGenetikk
+MedicalDomain <|.. Patologi
+
+ObservationProfile --> NorskLaboratoriekodeverk
+DiagnosticReportProfile --> ObservationProfile
+NorskLaboratoriekodeverk --> HL7Norway
+NorwegianHealthcare --> NorskLaboratoriekodeverk
+
+note right of NorskLaboratoriekodeverk
+Version: 7280.77
+Total Codes: 11,391
+Active: 9,679 codes
+Historical: 1,712 codes
+Status: Experimental
+end note
+
+note right of MedicalDomain
+Six major medical specialties
+covering comprehensive
+laboratory terminology
+end note
+
+note bottom of ObservationProfile
+FHIR R4 Observations using
+NLK codes for laboratory
+test identification
+end note
+
+@enduml

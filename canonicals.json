@@ -1,0 +1,16 @@
+[
+  {
+    "id" : "norsk-laboratoriekodeverk",
+    "type" : "CodeSystem",
+    "url" : "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk",
+    "version" : "0.1.0",
+    "name" : "NorskLaboratoriekodeverk"
+  },
+  {
+    "id" : "hl7.fhir.no.nlk-test",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.no/fhir/ig/nlk-test/ImplementationGuide/hl7.fhir.no.nlk-test",
+    "version" : "0.1.0",
+    "name" : "NlkTest"
+  }
+]

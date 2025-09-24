@@ -2,6 +2,15 @@ name: Validate FSH Files
 
 on:
   workflow_dispatch:
+    inputs:
+      delete_cache:
+        description: 'Delete all cache before validation'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
 
 # CONFIGURATION: The "short name" of the IG and the folder must be the same
 env:
@@ -25,7 +34,17 @@ jobs:
       with:
         python-version: '3.x'
         
+    - name: Delete cache if requested
+      if: ${{ github.event.inputs.delete_cache == 'true' }}
+      run: |
+        echo "🗑️ Deleting all cache directories..."
+        rm -rf ~/.npm
+        rm -rf ~/.fhir
+        rm -rf ./node_modules
+        echo "✅ Cache cleared"
+
     - name: Cache Node.js modules
+      if: ${{ github.event.inputs.delete_cache != 'true' }}
       uses: actions/cache@v4
       with:
         path: ~/.npm
@@ -33,6 +52,13 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-node-
           ${{ runner.os }}-
+
+    - name: Show cache status
+      run: |
+        echo "📊 Cache status:"
+        echo "Delete cache option: ${{ github.event.inputs.delete_cache }}"
+        echo "NPM cache size: $(du -sh ~/.npm 2>/dev/null || echo '0B (not found)')"
+        echo "FHIR cache size: $(du -sh ~/.fhir 2>/dev/null || echo '0B (not found)')"
 
     - name: Install fsh-sushi
       run: npm install -g fsh-sushi

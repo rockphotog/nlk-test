@@ -1,2 +1,3 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk,0.1.0,active,,NorskLaboratoriekodeverk,Norsk Laboratoriekodeverk,"Norwegian Laboratory Codebook - a comprehensive terminology for laboratory medicine in Norway",
+http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk,0.2.2,draft,,NorskLaboratoriekodeverk,Norsk Laboratoriekodeverk,"Norwegian Laboratory Codebook - a comprehensive terminology for laboratory medicine in Norway",
+http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk-medical-genetics,0.2.2,draft,,NorskLaboratoriekodeverkMedicalGenetics,Norsk Laboratoriekodeverk - Medical Genetics,"Norwegian Laboratory Codebook - Medical Genetics domain subset with complete metadata properties. Made as an example for NLK with detailed properties for each code.",

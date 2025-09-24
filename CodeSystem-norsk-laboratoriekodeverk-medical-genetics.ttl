@@ -1,0 +1,4916 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk-medical-genetics> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "norsk-laboratoriekodeverk-medical-genetics"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem norsk-laboratoriekodeverk-medical-genetics</b></p><a name=\"norsk-laboratoriekodeverk-medical-genetics\"> </a><a name=\"hcnorsk-laboratoriekodeverk-medical-genetics\"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>validFrom</td><td>validFrom</td><td>dateTime</td><td>Valid from date</td></tr><tr><td>validTo</td><td>validTo</td><td>dateTime</td><td>Valid to date</td></tr><tr><td>replacedBy</td><td>replacedBy</td><td>code</td><td>Code that replaces this code</td></tr><tr><td>changeDate</td><td>changeDate</td><td>dateTime</td><td>Date of last change</td></tr><tr><td>codeDefinition</td><td>codeDefinition</td><td>string</td><td>Technical code definition</td></tr><tr><td>component</td><td>component</td><td>string</td><td>Component being measured</td></tr><tr><td>componentSpec</td><td>componentSpec</td><td>string</td><td>Component specification</td></tr><tr><td>system</td><td>system</td><td>string</td><td>System/specimen type</td></tr><tr><td>systemSpec</td><td>systemSpec</td><td>string</td><td>System specification</td></tr><tr><td>propertyType</td><td>propertyType</td><td>string</td><td>Type of property measured</td></tr><tr><td>propertySpec</td><td>propertySpec</td><td>string</td><td>Property specification</td></tr><tr><td>unit</td><td>unit</td><td>string</td><td>Unit of measurement</td></tr><tr><td>primaryDomain</td><td>primaryDomain</td><td>string</td><td>Primary medical domain</td></tr><tr><td>secondaryDomain</td><td>secondaryDomain</td><td>string</td><td>Secondary medical domain</td></tr><tr><td>grouping</td><td>grouping</td><td>string</td><td>Grouping category</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk-medical-genetics</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>validFrom</b></td><td><b>validTo</b></td><td><b>replacedBy</b></td><td><b>changeDate</b></td><td><b>component</b></td><td><b>componentSpec</b></td><td><b>system</b></td><td><b>systemSpec</b></td><td><b>propertyType</b></td><td><b>propertySpec</b></td><td><b>primaryDomain</b></td><td><b>secondaryDomain</b></td><td><b>grouping</b></td></tr><tr><td style=\"white-space:nowrap\">NOR15177<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR15177\"> </a></td><td>DNA-Mitokondriegenom-sekvensering</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td>Medisinsk biokjemi</td><td/></tr><tr><td style=\"white-space:nowrap\">NOR25416<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25416\"> </a></td><td>Ce-Dyrkning</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25420<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25420\"> </a></td><td>RNA-Ekspresjonsprofilering</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td/><td>Undersøkelse av genekspresjonsmønster</td><td/><td>RNA</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25437<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25437\"> </a></td><td>DNA-Sangersekvensering, enkeltgen</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Sangersekvensering av et spesifikt gen</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25438<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25438\"> </a></td><td>DNA-Sangersekvensering, eksoner</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Sangersekvensering av ett eller flere utvalgte eksoner</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25439<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25439\"> </a></td><td>DNA-Gensekvensering analysepakke</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2017-10-23T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25440<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25440\"> </a></td><td>DNA-Sangersekvensering, variant</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Sangersekvensering av en kjent DNA-sekvensvariant</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25441<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25441\"> </a></td><td>DNA-Analysepakke DNA-sekvensvarianter</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>Undersøkelse av flere kjente DNA-sekvensvarianter</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25442<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25442\"> </a></td><td>DNA-Haplotyping</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Haplotyping for å påvise lokus for et sykdomsgen</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25443<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25443\"> </a></td><td>DNA-Metyleringsprofilering</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25444<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25444\"> </a></td><td>DNA-Eksomsekvensering</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25445<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25445\"> </a></td><td>DNA-Genomsekvensering</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25446<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25446\"> </a></td><td>DNA-Genetisk screening</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2017-11-30T23:59:00+00:00</td><td>NOR25441</td><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25463<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25463\"> </a></td><td>DNA-Kopitallsanalyse gen, MLPA</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Undersøkelse for å påvise kopitallsvariasjon vha Multiplex Ligation-dependent Probe Amplification</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25464<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25464\"> </a></td><td>Ce-Kromosomalt rearrangement, FISH</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Undersøkelse av kromosomale rearrangementer i celler vha Fluorescence In Situ Hybridization</td><td/><td>Celler</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25465<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25465\"> </a></td><td>Ce-Mikroskopisk-karyotyping</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>Lysmikroskopisk kromosomanalyse av celler</td><td/><td>Celler</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25466<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25466\"> </a></td><td>B-Mikroskopisk-karyotyping</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>Lysmikroskopisk kromosomanalyse av blod</td><td/><td>Blod</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25467<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25467\"> </a></td><td>Ce-Mikroskopisk-karyotyping, kreftceller</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Lysmikroskopisk kromosomanalyse av kreftceller</td><td/><td>Celler</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25468<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25468\"> </a></td><td>DNA-Helgenomisk kopitallsanalyse</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2019-03-22T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25469<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25469\"> </a></td><td>DNA-Helgenomisk homozygositetsanalyse</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25470<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25470\"> </a></td><td>Ce-Kromosomidentitet</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2017-10-23T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25506<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25506\"> </a></td><td>DNA-Kromatinanalyse</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25507<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25507\"> </a></td><td>DNA-Metyleringstest, metyleringssensitiv MLPA</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Undersøkelse for å påvise metyleringsmønster vha metyleringssensitiv Multiplex Ligation-dependent Probe Amplification</td><td/><td>DNA</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25510<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25510\"> </a></td><td>B-DNA</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td>2013-11-13T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25511<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25511\"> </a></td><td>Ce-DNA</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td>2013-11-13T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25512<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25512\"> </a></td><td>B-RNA</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td>2013-11-13T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25513<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25513\"> </a></td><td>Ce-RNA</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td>2013-11-13T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25808<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25808\"> </a></td><td>RNA-Sangersekvensering, eksoner</td><td/><td>2016-11-01T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Sangersekvensering av ett eller flere utvalgte eksoner</td><td/><td>RNA</td><td>spesifikasjon</td><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR25809<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR25809\"> </a></td><td>DNA-Fragmentanalyse</td><td/><td>2016-11-01T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>DNA</td><td/><td>DNA</td><td>spesifikasjon</td><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35056<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35056\"> </a></td><td>DNA-Helgenomisk kopitallsanalyse fam.ktr.</td><td/><td>2018-09-24T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2018-11-23T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35057<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35057\"> </a></td><td>DNA-Eksom-/genomsekvensering fam.ktr.</td><td/><td>2018-09-24T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2018-11-23T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35103<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35103\"> </a></td><td>DNA-Gensekvensering analysepakke inkl. kopitallsanalyse</td><td/><td>2019-03-22T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35104<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35104\"> </a></td><td>DNA-Eksomsekvensering inkl. kopitallsanalyse</td><td/><td>2019-03-22T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35105<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35105\"> </a></td><td>DNA-Genomsekvensering inkl. kopitallsanalyse</td><td/><td>2019-03-22T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35218<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35218\"> </a></td><td>B-DNA ekstraksjon og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Ekstraksjon og lagring av DNA fra blodceller</td><td/><td>Blod</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35219<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35219\"> </a></td><td>Ce-DNA ekstraksjon og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Ekstraksjon og lagring av DNA fra andre celler</td><td/><td>Celler</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35220<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35220\"> </a></td><td>B-RNA ekstraksjon og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Ekstraksjon og lagring av RNA fra blodceller</td><td/><td>Blod</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35221<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35221\"> </a></td><td>Ce-RNA ekstraksjon og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Ekstraksjon og lagring av RNA fra andre celler</td><td/><td>Celler</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35222<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35222\"> </a></td><td>Ce-Dyrkning og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Dyrkning og lagring av celler</td><td/><td>Celler</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35223<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35223\"> </a></td><td>B-Dyrkning og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Dyrkning og lagring av blodceller</td><td/><td>Blod</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35245<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35245\"> </a></td><td>RNA-NGS-transkriptom</td><td/><td>2022-03-23T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>Neste generasjons sekvensering av hele transkriptomet</td><td/><td>RNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35255<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35255\"> </a></td><td>DNA-Anriket panel, NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av flere gener for en gitt sykdom/syndrom (panel)</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35256<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35256\"> </a></td><td>DNA-Heleksom, NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av hele eksomet</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35257<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35257\"> </a></td><td>DNA-Helgenom, NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av hele genomet</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35258<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35258\"> </a></td><td>Tolkning, 1-10 gener eller kjente varianter</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, 1-10 gener eller kjente varianter</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35259<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35259\"> </a></td><td>Tolkning, 11-99 gener</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, 11-99 gener</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35260<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35260\"> </a></td><td>Tolkning, over 100 gener</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, over 100 gener</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35261<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35261\"> </a></td><td>Tolkning inkl. kopitall, 1-10 gener eller kjente varianter</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, inkludert kopitallsanalyse, 1-10 gener eller kjente varianter</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35262<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35262\"> </a></td><td>Tolkning inkl. kopitall, 11-99 gener</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, inkludert kopitallsanalyse, 11-99 gener</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35263<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35263\"> </a></td><td>Tolkning inkl. kopitall, over 100 gener</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, inkludert kopitallsanalyse, over 100 gener</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35264<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35264\"> </a></td><td>Retolkning av en eller flere varianter</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Retolkning av en eller flere varianter</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35265<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35265\"> </a></td><td>DNA-Heleksom, fam.ktr., NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av hele eksomet, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35266<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35266\"> </a></td><td>DNA-Helgenom, fam.ktr., NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av hele genomet, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35267<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35267\"> </a></td><td>DNA-Helgenomisk kopitallsanalyse, ArrayCGH</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk analyse mtp kopitallsvariasjon vha Array comparative genomic hybridization</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35268<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35268\"> </a></td><td>DNA-Helgenomisk kopitallsanalyse, SNParray</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk analyse mtp kopitallsvariasjon vha Single nucleotide polymorphism microarray</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35269<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35269\"> </a></td><td>DNA-Helgenomisk kopitallsanalyse, fam.ktr., ArrayCGH</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll, vha Array comparative genomic hybridization</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35270<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35270\"> </a></td><td>DNA-Helgenomisk kopitallsanalyse, fam.ktr., SNParray</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll, vha Single nucleotide polymorphism microarray</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35271<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35271\"> </a></td><td>DNA-Helgenomisk metyleringsanalyse, NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk metyleringsanalyse ved Neste generasjons sekvensering</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35272<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35272\"> </a></td><td>DNA-Metyleringsprofilering, matrise</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Metyleringsprofilering, matrise</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35281<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35281\"> </a></td><td>DNA-Digital dråpe PCR</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Digital dråpe PCR</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35282<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35282\"> </a></td><td>DNA-Optisk mapping sekvensering</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Optisk mapping sekvensering</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35283<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35283\"> </a></td><td>DNA-PGT Karyomapping, fam.ktr.</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Karyomapping for haplotyping og påvisning av genetisk sekvensvariant, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35284<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35284\"> </a></td><td>Ce-PGT Karyomapping, blastocyst</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Karyomapping for haplotyping og påvisning av genetisk sekvensvariant, blastocyst</td><td/><td>Celler</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35285<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35285\"> </a></td><td>DNA-PGT Helgenomisk kopitallsanalyse, fam.ktr.</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35286<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35286\"> </a></td><td>Ce-PGT Helgenomisk kopitallsanalyse, blastocyst</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Helgenomisk analyse mtp kopitallsvariasjon, blastocyst</td><td/><td>Celler</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35287<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35287\"> </a></td><td>DNA-PGT Helgenom, fam.ktr., NGS</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Neste generasjons sekvensering av hele genomet, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NOR35288<a name=\"norsk-laboratoriekodeverk-medical-genetics-NOR35288\"> </a></td><td>Ce-PGT Helgenom blastocyst, NGS</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Neste generasjons sekvensering av hele genomet, blastocyst</td><td/><td>Celler</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">NPU19142<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19142\"> </a></td><td>DNA-MT-ATP6</td><td>DNA(spec.)—MT-ATP6 gene; seq.var. = ?</td><td>2015-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19145<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19145\"> </a></td><td>DNA-MT-ND4</td><td>DNA(spec.)—MT-ND4 gene; seq.var. = ?</td><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND4-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19148<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19148\"> </a></td><td>DNA-MT-TK</td><td>DNA(spec.)—MT-TK gene; seq.var. = ?</td><td>2015-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19149<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19149\"> </a></td><td>DNA-MT-TL1</td><td>DNA(spec.)—MT-TL1 gene; seq.var. = ?</td><td>2015-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19179<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19179\"> </a></td><td>DNA-PYGM-gen</td><td>DNA(spec.)—PYGM gene; seq.var. = ?</td><td>2022-11-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>PYGM-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19293<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19293\"> </a></td><td>DNA-MT-ATP6(8993T&gt;G, Leu156Arg)</td><td>DNA(spec.)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;G); entitic num.(0 1 2) = ?</td><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td>NC_012920.1:g.8993T&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19294<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19294\"> </a></td><td>DNA-MT-ATP6(8993T&gt;C)</td><td>DNA(spec.)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td>NC_012920.1:g.8993T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19296<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19296\"> </a></td><td>DNA-MT-RNR1(1555A&gt;G)</td><td>DNA(spec.)—MT-RNR1 gene(NC_012920.1:g.1555A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-RNR1-gen</td><td>NC_012920.1:g.1555A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19297<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19297\"> </a></td><td>DNA-MT-TK(8344A&gt;G)</td><td>DNA(spec.)—MT-TK gene(NC_012920.1:g.8344A&gt;G); entitic num.(0 1 2) = ?</td><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td>NC_012920.1:g.8344A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU19298<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU19298\"> </a></td><td>DNA-MT-TL1(3243A&gt;G)</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); entitic num.(0 1 2) = ?</td><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3243A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57092<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57092\"> </a></td><td>DNA(B)-MT-TL1-gen (3243A&gt;G)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3243A&gt;G</td><td>DNA</td><td>Blod</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57093<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57093\"> </a></td><td>DNA(B)-MT-ATP6-gen (8993T&gt;G)</td><td>DNA(B)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;G); entitic num.(0 1 2) = ?</td><td>2017-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td>NC_012920.1:g.8993T&gt;G</td><td>DNA</td><td>Blod</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57096<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57096\"> </a></td><td>DNA(B)-MT-TK-gen (8344A&gt;G)</td><td>DNA(B)—MT-TK gene(NC_012920.1:g.8344A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td>NC_012920.1:g.8344A&gt;G</td><td>DNA</td><td>Blod</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57605<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57605\"> </a></td><td>DNA-MT-TL1(3256C&gt;T)</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3256C&gt;T); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3256C&gt;T</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57612<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57612\"> </a></td><td>DNA-MT-TL1(3271T&gt;C)</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3271T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3271T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57613<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57613\"> </a></td><td>DNA-MT-CO1(7445A&gt;G)</td><td>DNA(spec.)—MT-CO1 gene(NC_012920.1:g.7445A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-CO1-gen</td><td>NC_012920.1:g.7445A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57614<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57614\"> </a></td><td>DNA-MT-TS1(7471_7472insC)</td><td>DNA(spec.)—MT-TS1 gene(NC_012920.1:g.7471_7472insC); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TS1-gen</td><td>NC_012920.1:g.7471_7472insC</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57629<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57629\"> </a></td><td>DNA-MT-TK(8356T&gt;C)</td><td>DNA(spec.)—MT-TK gene(NC_012920.1:g.8356T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td>NC_012920.1:g.8356T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57630<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57630\"> </a></td><td>DNA-MT-ND5(13513G&gt;A)</td><td>DNA(spec.)—MT-ND5 gene(NC_012920.1:g.13513G&gt;A); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND5-gen</td><td>NC_012920.1:g.13513G&gt;A</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57631<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57631\"> </a></td><td>DNA-MT-ND6(14459G&gt;A)</td><td>DNA(spec.)—MT-ND6 gene(NC_012920.1:g.14459G&gt;A); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND6-gen</td><td>NC_012920.1:g.14459G&gt;A</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57632<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57632\"> </a></td><td>DNA-MT-ND1(3460G&gt;A)</td><td>DNA(spec.)—MT-ND1 gene(NC_012920.1:g.3460G&gt;A); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND1-gen</td><td>NC_012920.1:g.3460G&gt;A</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57633<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57633\"> </a></td><td>DNA-MT-ND4(11778G&gt;A)</td><td>DNA(spec.)—MT-ND4 gene(NC_012920.1:g.11778G&gt;A); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND4-gen</td><td>NC_012920.1:g.11778G&gt;A</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57634<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57634\"> </a></td><td>DNA-MT-ND6(14484T&gt;C)</td><td>DNA(spec.)—MT-ND6 gene(NC_012920.1:g.14484T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND6-gen</td><td>NC_012920.1:g.14484T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57635<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57635\"> </a></td><td>DNA-MT-ATP6(9185(T&gt;C)</td><td>DNA(spec.)—MT-ND5 gene(NC_012920.1:g.9185T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND5-gen</td><td>NC_012920.1:g.9185T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57792<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57792\"> </a></td><td>DNA(B)-MT-TL1 gen(3252A&gt;G)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-10-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252A&gt;G</td><td>DNA</td><td>Blod</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU57803<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU57803\"> </a></td><td>DNA-MT-TL1 gen(3252A&gt;G)</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); entitic num.(0 1 2) = ?</td><td>2018-02-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58187<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58187\"> </a></td><td>DNA-MT-TL1-gen</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3271); seq.var. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3271</td><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58188<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58188\"> </a></td><td>DNA-MT-TL1-gen</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3252); seq.var. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252</td><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58190<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58190\"> </a></td><td>DNA(B)-MT-TL1-gen</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3252); seq.var. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252</td><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58191<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58191\"> </a></td><td>DNA(B)-MT-TL1-gen</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3271); seq.var. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3271</td><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58206<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58206\"> </a></td><td>DNA(B)-MT-TL1-gen (3271T&gt;C)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3271T&gt;C); arb.cont. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3271T&gt;C</td><td>DNA</td><td>Blod</td><td>arbitrært innhold</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58207<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58207\"> </a></td><td>DNA(B)-MT-TL1-gen (3252A&gt;G)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); arb.cont. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252A&gt;G</td><td>DNA</td><td>Blod</td><td>arbitrært innhold</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58269<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58269\"> </a></td><td>DNA(B)-MT-TL1-gen (3243A&gt;G)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); arb.cont. = ?</td><td>2018-06-22T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3243A&gt;G</td><td>DNA</td><td>Blod</td><td>arbitrært innhold</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58272<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58272\"> </a></td><td>DNA(B)-MT-TL1-gen</td><td>DNA(B)—MT-TL1 gene; seq.var. = ?</td><td>2018-06-22T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td/><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58273<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58273\"> </a></td><td>DNA(B)-MT-TK-gen</td><td>DNA(B)—MT-TK gene; seq.var. = ?</td><td>2018-06-22T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td/><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style=\"white-space:nowrap\">NPU58274<a name=\"norsk-laboratoriekodeverk-medical-genetics-NPU58274\"> </a></td><td>DNA(B)-MT-ATP6-gen</td><td>DNA(B)—MT-ATP6 gene; seq.var. = ?</td><td>2018-06-22T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td/><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk-medical-genetics"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.2"] ; # 
+  fhir:name [ fhir:v "NorskLaboratoriekodeverkMedicalGenetics"] ; # 
+  fhir:title [ fhir:v "Norsk Laboratoriekodeverk - Medical Genetics"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2025-09-24"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Espen"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Espen" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/rockphotog/" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Espen" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://github.com/rockphotog/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Norwegian Laboratory Codebook - Medical Genetics domain subset with complete metadata properties. Made as an example for NLK with detailed properties for each code."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "NO" ] ;
+       fhir:display [ fhir:v "Norway" ]
+     ] )
+  ] ) ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "103"^^xsd:nonNegativeInteger] ; # 
+  fhir:property ( [
+     fhir:code [ fhir:v "validFrom" ] ;
+     fhir:description [ fhir:v "Valid from date" ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:code [ fhir:v "validTo" ] ;
+     fhir:description [ fhir:v "Valid to date" ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:code [ fhir:v "replacedBy" ] ;
+     fhir:description [ fhir:v "Code that replaces this code" ] ;
+     fhir:type [ fhir:v "code" ]
+  ] [
+     fhir:code [ fhir:v "changeDate" ] ;
+     fhir:description [ fhir:v "Date of last change" ] ;
+     fhir:type [ fhir:v "dateTime" ]
+  ] [
+     fhir:code [ fhir:v "codeDefinition" ] ;
+     fhir:description [ fhir:v "Technical code definition" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "component" ] ;
+     fhir:description [ fhir:v "Component being measured" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "componentSpec" ] ;
+     fhir:description [ fhir:v "Component specification" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "system" ] ;
+     fhir:description [ fhir:v "System/specimen type" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "systemSpec" ] ;
+     fhir:description [ fhir:v "System specification" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "propertyType" ] ;
+     fhir:description [ fhir:v "Type of property measured" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "propertySpec" ] ;
+     fhir:description [ fhir:v "Property specification" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "unit" ] ;
+     fhir:description [ fhir:v "Unit of measurement" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "primaryDomain" ] ;
+     fhir:description [ fhir:v "Primary medical domain" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "secondaryDomain" ] ;
+     fhir:description [ fhir:v "Secondary medical domain" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] [
+     fhir:code [ fhir:v "grouping" ] ;
+     fhir:description [ fhir:v "Grouping category" ] ;
+     fhir:type [ fhir:v "string" ]
+  ] ) ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "NOR15177" ] ;
+     fhir:display [ fhir:v "DNA-Mitokondriegenom-sekvensering" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25416" ] ;
+     fhir:display [ fhir:v "Ce-Dyrkning" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25420" ] ;
+     fhir:display [ fhir:v "RNA-Ekspresjonsprofilering" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Undersøkelse av genekspresjonsmønster"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "RNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25437" ] ;
+     fhir:display [ fhir:v "DNA-Sangersekvensering, enkeltgen" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Sangersekvensering av et spesifikt gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25438" ] ;
+     fhir:display [ fhir:v "DNA-Sangersekvensering, eksoner" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Sangersekvensering av ett eller flere utvalgte eksoner"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25439" ] ;
+     fhir:display [ fhir:v "DNA-Gensekvensering analysepakke" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-10-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25440" ] ;
+     fhir:display [ fhir:v "DNA-Sangersekvensering, variant" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Sangersekvensering av en kjent DNA-sekvensvariant"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25441" ] ;
+     fhir:display [ fhir:v "DNA-Analysepakke DNA-sekvensvarianter" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Undersøkelse av flere kjente DNA-sekvensvarianter"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25442" ] ;
+     fhir:display [ fhir:v "DNA-Haplotyping" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Haplotyping for å påvise lokus for et sykdomsgen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25443" ] ;
+     fhir:display [ fhir:v "DNA-Metyleringsprofilering" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25444" ] ;
+     fhir:display [ fhir:v "DNA-Eksomsekvensering" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25445" ] ;
+     fhir:display [ fhir:v "DNA-Genomsekvensering" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25446" ] ;
+     fhir:display [ fhir:v "DNA-Genetisk screening" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-11-30T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "replacedBy" ] ;
+       fhir:value [
+         a fhir:code ;
+         fhir:v "NOR25441"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25463" ] ;
+     fhir:display [ fhir:v "DNA-Kopitallsanalyse gen, MLPA" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Undersøkelse for å påvise kopitallsvariasjon vha Multiplex Ligation-dependent Probe Amplification"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25464" ] ;
+     fhir:display [ fhir:v "Ce-Kromosomalt rearrangement, FISH" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Undersøkelse av kromosomale rearrangementer i celler vha Fluorescence In Situ Hybridization"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25465" ] ;
+     fhir:display [ fhir:v "Ce-Mikroskopisk-karyotyping" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Lysmikroskopisk kromosomanalyse av celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25466" ] ;
+     fhir:display [ fhir:v "B-Mikroskopisk-karyotyping" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Lysmikroskopisk kromosomanalyse av blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25467" ] ;
+     fhir:display [ fhir:v "Ce-Mikroskopisk-karyotyping, kreftceller" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Lysmikroskopisk kromosomanalyse av kreftceller"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25468" ] ;
+     fhir:display [ fhir:v "DNA-Helgenomisk kopitallsanalyse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2019-03-22T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25469" ] ;
+     fhir:display [ fhir:v "DNA-Helgenomisk homozygositetsanalyse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25470" ] ;
+     fhir:display [ fhir:v "Ce-Kromosomidentitet" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-10-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25506" ] ;
+     fhir:display [ fhir:v "DNA-Kromatinanalyse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25507" ] ;
+     fhir:display [ fhir:v "DNA-Metyleringstest, metyleringssensitiv MLPA" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Undersøkelse for å påvise metyleringsmønster vha metyleringssensitiv Multiplex Ligation-dependent Probe Amplification"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25510" ] ;
+     fhir:display [ fhir:v "B-DNA" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-11-13T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25511" ] ;
+     fhir:display [ fhir:v "Ce-DNA" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-11-13T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25512" ] ;
+     fhir:display [ fhir:v "B-RNA" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-11-13T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25513" ] ;
+     fhir:display [ fhir:v "Ce-RNA" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-11-13T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25808" ] ;
+     fhir:display [ fhir:v "RNA-Sangersekvensering, eksoner" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2016-11-01T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Sangersekvensering av ett eller flere utvalgte eksoner"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "RNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR25809" ] ;
+     fhir:display [ fhir:v "DNA-Fragmentanalyse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2016-11-01T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35056" ] ;
+     fhir:display [ fhir:v "DNA-Helgenomisk kopitallsanalyse fam.ktr." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-09-24T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35057" ] ;
+     fhir:display [ fhir:v "DNA-Eksom-/genomsekvensering fam.ktr." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-09-24T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35103" ] ;
+     fhir:display [ fhir:v "DNA-Gensekvensering analysepakke inkl. kopitallsanalyse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2019-03-22T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35104" ] ;
+     fhir:display [ fhir:v "DNA-Eksomsekvensering inkl. kopitallsanalyse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2019-03-22T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35105" ] ;
+     fhir:display [ fhir:v "DNA-Genomsekvensering inkl. kopitallsanalyse" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2019-03-22T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "validTo" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-12-31T23:59:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35218" ] ;
+     fhir:display [ fhir:v "B-DNA ekstraksjon og lagring" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2021-05-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Ekstraksjon og lagring av DNA fra blodceller"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35219" ] ;
+     fhir:display [ fhir:v "Ce-DNA ekstraksjon og lagring" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2021-05-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Ekstraksjon og lagring av DNA fra andre celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35220" ] ;
+     fhir:display [ fhir:v "B-RNA ekstraksjon og lagring" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2021-05-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Ekstraksjon og lagring av RNA fra blodceller"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35221" ] ;
+     fhir:display [ fhir:v "Ce-RNA ekstraksjon og lagring" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2021-05-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Ekstraksjon og lagring av RNA fra andre celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35222" ] ;
+     fhir:display [ fhir:v "Ce-Dyrkning og lagring" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2021-05-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Dyrkning og lagring av celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35223" ] ;
+     fhir:display [ fhir:v "B-Dyrkning og lagring" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2021-05-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Dyrkning og lagring av blodceller"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35245" ] ;
+     fhir:display [ fhir:v "RNA-NGS-transkriptom" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-03-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Neste generasjons sekvensering av hele transkriptomet"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "RNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35255" ] ;
+     fhir:display [ fhir:v "DNA-Anriket panel, NGS" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Neste generasjons sekvensering av flere gener for en gitt sykdom/syndrom (panel)"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35256" ] ;
+     fhir:display [ fhir:v "DNA-Heleksom, NGS" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Neste generasjons sekvensering av hele eksomet"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35257" ] ;
+     fhir:display [ fhir:v "DNA-Helgenom, NGS" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Neste generasjons sekvensering av hele genomet"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35258" ] ;
+     fhir:display [ fhir:v "Tolkning, 1-10 gener eller kjente varianter" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Tolkning av genpanel, 1-10 gener eller kjente varianter"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35259" ] ;
+     fhir:display [ fhir:v "Tolkning, 11-99 gener" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Tolkning av genpanel, 11-99 gener"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35260" ] ;
+     fhir:display [ fhir:v "Tolkning, over 100 gener" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Tolkning av genpanel, over 100 gener"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35261" ] ;
+     fhir:display [ fhir:v "Tolkning inkl. kopitall, 1-10 gener eller kjente varianter" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Tolkning av genpanel, inkludert kopitallsanalyse, 1-10 gener eller kjente varianter"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35262" ] ;
+     fhir:display [ fhir:v "Tolkning inkl. kopitall, 11-99 gener" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Tolkning av genpanel, inkludert kopitallsanalyse, 11-99 gener"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35263" ] ;
+     fhir:display [ fhir:v "Tolkning inkl. kopitall, over 100 gener" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Tolkning av genpanel, inkludert kopitallsanalyse, over 100 gener"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35264" ] ;
+     fhir:display [ fhir:v "Retolkning av en eller flere varianter" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Retolkning av en eller flere varianter"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35265" ] ;
+     fhir:display [ fhir:v "DNA-Heleksom, fam.ktr., NGS" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Neste generasjons sekvensering av hele eksomet, familiekontroll"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35266" ] ;
+     fhir:display [ fhir:v "DNA-Helgenom, fam.ktr., NGS" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Neste generasjons sekvensering av hele genomet, familiekontroll"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35267" ] ;
+     fhir:display [ fhir:v "DNA-Helgenomisk kopitallsanalyse, ArrayCGH" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Helgenomisk analyse mtp kopitallsvariasjon vha Array comparative genomic hybridization"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35268" ] ;
+     fhir:display [ fhir:v "DNA-Helgenomisk kopitallsanalyse, SNParray" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Helgenomisk analyse mtp kopitallsvariasjon vha Single nucleotide polymorphism microarray"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35269" ] ;
+     fhir:display [ fhir:v "DNA-Helgenomisk kopitallsanalyse, fam.ktr., ArrayCGH" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll, vha Array comparative genomic hybridization"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35270" ] ;
+     fhir:display [ fhir:v "DNA-Helgenomisk kopitallsanalyse, fam.ktr., SNParray" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll, vha Single nucleotide polymorphism microarray"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35271" ] ;
+     fhir:display [ fhir:v "DNA-Helgenomisk metyleringsanalyse, NGS" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Helgenomisk metyleringsanalyse ved Neste generasjons sekvensering"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35272" ] ;
+     fhir:display [ fhir:v "DNA-Metyleringsprofilering, matrise" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Metyleringsprofilering, matrise"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35281" ] ;
+     fhir:display [ fhir:v "DNA-Digital dråpe PCR" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Digital dråpe PCR"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35282" ] ;
+     fhir:display [ fhir:v "DNA-Optisk mapping sekvensering" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Optisk mapping sekvensering"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35283" ] ;
+     fhir:display [ fhir:v "DNA-PGT Karyomapping, fam.ktr." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Preimplantasjonstesting, Karyomapping for haplotyping og påvisning av genetisk sekvensvariant, familiekontroll"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35284" ] ;
+     fhir:display [ fhir:v "Ce-PGT Karyomapping, blastocyst" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Preimplantasjonstesting, Karyomapping for haplotyping og påvisning av genetisk sekvensvariant, blastocyst"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "ISCN/HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35285" ] ;
+     fhir:display [ fhir:v "DNA-PGT Helgenomisk kopitallsanalyse, fam.ktr." ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Preimplantasjonstesting, Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35286" ] ;
+     fhir:display [ fhir:v "Ce-PGT Helgenomisk kopitallsanalyse, blastocyst" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Preimplantasjonstesting, Helgenomisk analyse mtp kopitallsvariasjon, blastocyst"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35287" ] ;
+     fhir:display [ fhir:v "DNA-PGT Helgenom, fam.ktr., NGS" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Preimplantasjonstesting, Neste generasjons sekvensering av hele genomet, familiekontroll"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NOR35288" ] ;
+     fhir:display [ fhir:v "Ce-PGT Helgenom blastocyst, NGS" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2023-09-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Preimplantasjonstesting, Neste generasjons sekvensering av hele genomet, blastocyst"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Celler"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "takson"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "HGVS"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19142" ] ;
+     fhir:display [ fhir:v "DNA-MT-ATP6" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ATP6 gene; seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2015-03-01T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ATP6-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19145" ] ;
+     fhir:display [ fhir:v "DNA-MT-ND4" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ND4 gene; seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ND4-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19148" ] ;
+     fhir:display [ fhir:v "DNA-MT-TK" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TK gene; seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2015-03-01T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TK-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19149" ] ;
+     fhir:display [ fhir:v "DNA-MT-TL1" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TL1 gene; seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2015-03-01T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19179" ] ;
+     fhir:display [ fhir:v "DNA-PYGM-gen" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—PYGM gene; seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2022-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "PYGM-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19293" ] ;
+     fhir:display [ fhir:v "DNA-MT-ATP6(8993T>G, Leu156Arg)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ATP6 gene(NC_012920.1:g.8993T>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ATP6-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.8993T>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19294" ] ;
+     fhir:display [ fhir:v "DNA-MT-ATP6(8993T>C)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ATP6 gene(NC_012920.1:g.8993T>C); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ATP6-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.8993T>C"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19296" ] ;
+     fhir:display [ fhir:v "DNA-MT-RNR1(1555A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-RNR1 gene(NC_012920.1:g.1555A>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-RNR1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.1555A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19297" ] ;
+     fhir:display [ fhir:v "DNA-MT-TK(8344A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TK gene(NC_012920.1:g.8344A>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TK-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.8344A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU19298" ] ;
+     fhir:display [ fhir:v "DNA-MT-TL1(3243A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3243A>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2013-01-25T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3243A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57092" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TL1-gen (3243A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TL1 gene(NC_012920.1:g.3243A>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-03-01T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3243A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57093" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-ATP6-gen (8993T>G)" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-ATP6 gene(NC_012920.1:g.8993T>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-03-01T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ATP6-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.8993T>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57096" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TK-gen (8344A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TK gene(NC_012920.1:g.8344A>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-03-01T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TK-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.8344A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57605" ] ;
+     fhir:display [ fhir:v "DNA-MT-TL1(3256C>T)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3256C>T); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3256C>T"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57612" ] ;
+     fhir:display [ fhir:v "DNA-MT-TL1(3271T>C)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3271T>C); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3271T>C"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57613" ] ;
+     fhir:display [ fhir:v "DNA-MT-CO1(7445A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-CO1 gene(NC_012920.1:g.7445A>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-CO1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.7445A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57614" ] ;
+     fhir:display [ fhir:v "DNA-MT-TS1(7471_7472insC)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TS1 gene(NC_012920.1:g.7471_7472insC); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TS1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.7471_7472insC"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57629" ] ;
+     fhir:display [ fhir:v "DNA-MT-TK(8356T>C)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TK gene(NC_012920.1:g.8356T>C); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TK-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.8356T>C"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57630" ] ;
+     fhir:display [ fhir:v "DNA-MT-ND5(13513G>A)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ND5 gene(NC_012920.1:g.13513G>A); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ND5-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.13513G>A"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57631" ] ;
+     fhir:display [ fhir:v "DNA-MT-ND6(14459G>A)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ND6 gene(NC_012920.1:g.14459G>A); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ND6-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.14459G>A"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57632" ] ;
+     fhir:display [ fhir:v "DNA-MT-ND1(3460G>A)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ND1 gene(NC_012920.1:g.3460G>A); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ND1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3460G>A"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57633" ] ;
+     fhir:display [ fhir:v "DNA-MT-ND4(11778G>A)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ND4 gene(NC_012920.1:g.11778G>A); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ND4-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.11778G>A"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57634" ] ;
+     fhir:display [ fhir:v "DNA-MT-ND6(14484T>C)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ND6 gene(NC_012920.1:g.14484T>C); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ND6-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.14484T>C"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57635" ] ;
+     fhir:display [ fhir:v "DNA-MT-ATP6(9185(T>C)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-ND5 gene(NC_012920.1:g.9185T>C); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-08-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ND5-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.9185T>C"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57792" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TL1 gen(3252A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TL1 gene(NC_012920.1:g.3252A>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2017-10-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3252A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU57803" ] ;
+     fhir:display [ fhir:v "DNA-MT-TL1 gen(3252A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3252A>G); entitic num.(0 1 2) = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-02-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3252A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "entitisk antall"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertySpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "0 1 2"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58187" ] ;
+     fhir:display [ fhir:v "DNA-MT-TL1-gen" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3271); seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-03-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3271"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58188" ] ;
+     fhir:display [ fhir:v "DNA-MT-TL1-gen" ] ;
+     fhir:definition [ fhir:v "DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3252); seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-03-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3252"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "spesifikasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58190" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TL1-gen" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TL1 gene(NC_012920.1:g.3252); seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-03-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3252"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58191" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TL1-gen" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TL1 gene(NC_012920.1:g.3271); seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-03-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3271"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58206" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TL1-gen (3271T>C)" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TL1 gene(NC_012920.1:g.3271T>C); arb.cont. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-03-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3271T>C"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "arbitrært innhold"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58207" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TL1-gen (3252A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TL1 gene(NC_012920.1:g.3252A>G); arb.cont. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-03-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3252A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "arbitrært innhold"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58269" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TL1-gen (3243A>G)" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TL1 gene(NC_012920.1:g.3243A>G); arb.cont. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-06-22T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "componentSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "NC_012920.1:g.3243A>G"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "arbitrært innhold"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58272" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TL1-gen" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TL1 gene; seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-06-22T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TL1-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58273" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-TK-gen" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-TK gene; seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-06-22T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-TK-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "NPU58274" ] ;
+     fhir:display [ fhir:v "DNA(B)-MT-ATP6-gen" ] ;
+     fhir:definition [ fhir:v "DNA(B)—MT-ATP6 gene; seq.var. = ?" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "validFrom" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2018-06-22T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "changeDate" ] ;
+       fhir:value [
+         a fhir:dateTime ;
+         fhir:v "2024-11-23T00:00:00+00:00"^^xsd:dateTime
+       ]
+     ] [
+       fhir:code [ fhir:v "component" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "MT-ATP6-gen"
+       ]
+     ] [
+       fhir:code [ fhir:v "system" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "DNA"
+       ]
+     ] [
+       fhir:code [ fhir:v "systemSpec" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Blod"
+       ]
+     ] [
+       fhir:code [ fhir:v "propertyType" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "sekvensvariasjon"
+       ]
+     ] [
+       fhir:code [ fhir:v "primaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk biokjemi"
+       ]
+     ] [
+       fhir:code [ fhir:v "secondaryDomain" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Medisinsk genetikk"
+       ]
+     ] [
+       fhir:code [ fhir:v "grouping" ] ;
+       fhir:value [
+         a fhir:string ;
+         fhir:v "Genetiske undersøkelser"
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

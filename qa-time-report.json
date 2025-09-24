@@ -1,120 +1,186 @@
 {
-  "date" : "Wed, 24 Sep, 2025 10:50:51 +0000",
+  "date" : "Wed, 24 Sep, 2025 15:29:24 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [
     {
       "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.nlk-test.json",
-      "size" : 2121,
+      "size" : 2544,
       "processes" : [
         {
           "activity" : "load",
-          "start" : 23,
-          "length" : 21
+          "start" : 27,
+          "length" : 29
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 29,
-          "length" : 17
+          "start" : 28,
+          "length" : 10
         },
         {
           "activity" : "generateNarratives",
-          "start" : 29,
-          "length" : 245
+          "start" : 28,
+          "length" : 311
         },
         {
           "activity" : "validate",
-          "start" : 47,
-          "length" : 3201
+          "start" : 49,
+          "length" : 2150
         },
         {
-          "activity" : "scanForUsageStats",
-          "start" : 50,
+          "activity" : "validate",
+          "start" : 51,
           "length" : 1
         },
         {
           "activity" : "generate1",
-          "start" : 50,
-          "length" : 81
+          "start" : 51,
+          "length" : 80
         },
         {
           "activity" : "generate2",
           "start" : 68,
-          "length" : 74
+          "length" : 81
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 78,
-          "length" : 3
+          "start" : 79,
+          "length" : 2
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 90,
+          "start" : 87,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk-medical-genetics.json",
+      "size" : 90195,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 26,
+          "length" : 53
+        },
+        {
+          "activity" : "load",
+          "start" : 26,
+          "length" : 71
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 28,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 28,
+          "length" : 22
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 29,
+          "length" : 102
+        },
+        {
+          "activity" : "validate",
+          "start" : 31,
+          "length" : 793
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 51,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 51,
+          "length" : 221
+        },
+        {
+          "activity" : "generate2",
+          "start" : 68,
+          "length" : 793
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 79,
+          "length" : 17
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 87,
           "length" : 1
         }
       ]
     },
     {
       "name" : "fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk.json",
-      "size" : 933270,
+      "size" : 933269,
       "processes" : [
         {
           "activity" : "loadResources",
-          "start" : 22,
-          "length" : 168
+          "start" : 26,
+          "length" : 268
         },
         {
           "activity" : "load",
-          "start" : 23,
-          "length" : 333
+          "start" : 26,
+          "length" : 421
+        },
+        {
+          "activity" : "load",
+          "start" : 27,
+          "length" : 1
         },
         {
           "activity" : "load-configure",
-          "start" : 29,
+          "start" : 28,
           "length" : 13
         },
         {
           "activity" : "checkR4R4B",
-          "start" : 29,
-          "length" : 154
+          "start" : 28,
+          "length" : 103
         },
         {
           "activity" : "generateNarratives",
           "start" : 29,
-          "length" : 1398
+          "length" : 1846
         },
         {
           "activity" : "validate",
-          "start" : 30,
-          "length" : 16045
+          "start" : 31,
+          "length" : 17714
         },
         {
           "activity" : "checkConformanceResources",
-          "start" : 50,
-          "length" : 10
+          "start" : 51,
+          "length" : 6
         },
         {
           "activity" : "scanForUsageStats",
-          "start" : 50,
-          "length" : 21
+          "start" : 51,
+          "length" : 9
         },
         {
           "activity" : "generate1",
-          "start" : 50,
-          "length" : 3234
+          "start" : 52,
+          "length" : 3160
         },
         {
           "activity" : "generate2",
-          "start" : 68,
-          "length" : 4539
+          "start" : 69,
+          "length" : 4560
         },
         {
           "activity" : "generateValidationPack",
-          "start" : 78,
-          "length" : 212
+          "start" : 79,
+          "length" : 262
         },
         {
           "activity" : "scanExamplesForR5",
-          "start" : 91,
+          "start" : 87,
           "length" : 6
         }
       ]

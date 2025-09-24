@@ -1,17 +1,18 @@
 NlkTest : Validation Results
 =========================================
 
-err = 0, warn = 6, info = 16
+err = 0, warn = 7, info = 32
 IG Publisher Version: 2.0.17
-Generated Wed Sep 24 10:51:58 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.nlk-test#0.1.0 (canonical = http://hl7.no/fhir/ig/nlk-test)
+Generated Wed Sep 24 15:30:25 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.nlk-test#0.2.2 (canonical = http://hl7.no/fhir/ig/nlk-test)
  Build Errors : 2 / 5 / 0
  /home/runner/work/nlk-test/nlk-test/nlk-test/fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk : 0 / 1 / 17
+ /home/runner/work/nlk-test/nlk-test/nlk-test/fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk-medical-genetics : 0 / 1 / 17
  /home/runner/work/nlk-test/nlk-test/nlk-test/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.nlk-test : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-ERROR: index.html#/html/body/div/div/div/div/div/ol/li/a at Line 342, column 59: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/ol/li/a at Line 343, column 74: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ol/li/a at Line 345, column 59: The link 'implementation.html' for "Implementation Notes" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ol/li/a at Line 346, column 74: The link 'downloads.html' for "Downloads" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -34,4 +35,22 @@ INFORMATION: CodeSystem/norsk-laboratoriekodeverk: CodeSystem.property[12]: This
 INFORMATION: CodeSystem/norsk-laboratoriekodeverk: CodeSystem.property[13]: This property has only a code ('secondaryDomain') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
 INFORMATION: CodeSystem/norsk-laboratoriekodeverk: CodeSystem.property[14]: This property has only a code ('grouping') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
 WARNING: CodeSystem/norsk-laboratoriekodeverk: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
+== fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk-medical-genetics.json ==
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[0]: This property has only a code ('validFrom') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[1]: This property has only a code ('validTo') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[2]: The type of property 'code' is 'code', but no ValueSet information was found, so the codes will be validated as internal codes
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[2]: This property has only a code ('replacedBy') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[3]: This property has only a code ('changeDate') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[4]: This property has only a code ('codeDefinition') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[5]: This property has only a code ('component') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[6]: This property has only a code ('componentSpec') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[7]: This property has only a code ('system') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[8]: This property has only a code ('systemSpec') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[9]: This property has only a code ('propertyType') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[10]: This property has only a code ('propertySpec') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[11]: This property has only a code ('unit') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[12]: This property has only a code ('primaryDomain') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[13]: This property has only a code ('secondaryDomain') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+INFORMATION: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.property[14]: This property has only a code ('grouping') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+WARNING: CodeSystem/norsk-laboratoriekodeverk-medical-genetics: CodeSystem.concept[0]: HL7 Defined CodeSystems should ensure that every concept has a definition
 == fsh-generated/resources/ImplementationGuide-hl7.fhir.no.nlk-test.json ==

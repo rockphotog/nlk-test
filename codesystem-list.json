@@ -2,11 +2,19 @@
   "codeSystems" : [
     {
       "url" : "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk",
-      "version" : "0.1.0",
-      "status" : "active",
+      "version" : "0.2.2",
+      "status" : "draft",
       "name" : "NorskLaboratoriekodeverk",
       "title" : "Norsk Laboratoriekodeverk",
       "description" : "Norwegian Laboratory Codebook - a comprehensive terminology for laboratory medicine in Norway"
+    },
+    {
+      "url" : "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk-medical-genetics",
+      "version" : "0.2.2",
+      "status" : "draft",
+      "name" : "NorskLaboratoriekodeverkMedicalGenetics",
+      "title" : "Norsk Laboratoriekodeverk - Medical Genetics",
+      "description" : "Norwegian Laboratory Codebook - Medical Genetics domain subset with complete metadata properties. Made as an example for NLK with detailed properties for each code."
     }
   ]
 }

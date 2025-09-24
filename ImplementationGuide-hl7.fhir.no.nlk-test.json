@@ -6,7 +6,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.nlk-test</b></p><a name=\"hl7.fhir.no.nlk-test\"> </a><a name=\"hchl7.fhir.no.nlk-test\"> </a><h2>NlkTest</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/nlk-test/ImplementationGuide/hl7.fhir.no.nlk-test</pre><div><p>FHIR Implementation Guide for the Norwegian Laboratory Codebook (Norsk Laboratoriekodeverk). This IG provides a comprehensive CodeSystem with 11,391 laboratory codes covering all aspects of Norwegian laboratory medicine across six major medical domains.</p>\n</div></div>"
   },
   "url" : "http://hl7.no/fhir/ig/nlk-test/ImplementationGuide/hl7.fhir.no.nlk-test",
-  "version" : "0.1.0",
+  "version" : "0.2.2",
   "name" : "NlkTest",
   "title" : "Norwegian Laboratory Codebook (NLK) - FHIR Implementation Guide",
   "status" : "draft",
@@ -621,8 +621,20 @@
       "reference" : {
         "reference" : "CodeSystem/norsk-laboratoriekodeverk"
       },
-      "name" : "Norwegian Laboratory Codebook",
-      "description" : "Complete Norwegian laboratory terminology with 11,391 codes",
+      "name" : "Norsk Laboratoriekodeverk",
+      "description" : "Norwegian Laboratory Codebook - a comprehensive terminology for laboratory medicine in Norway",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/norsk-laboratoriekodeverk-medical-genetics"
+      },
+      "name" : "Norsk Laboratoriekodeverk - Medical Genetics",
+      "description" : "Norwegian Laboratory Codebook - Medical Genetics domain subset with complete metadata properties. Made as an example for NLK with detailed properties for each code.",
       "exampleBoolean" : false
     }],
     "page" : {

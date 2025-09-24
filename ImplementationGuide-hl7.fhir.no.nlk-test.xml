@@ -7,7 +7,7 @@
 </div></div>
   </text>
   <url value="http://hl7.no/fhir/ig/nlk-test/ImplementationGuide/hl7.fhir.no.nlk-test"/>
-  <version value="0.1.0"/>
+  <version value="0.2.2"/>
   <name value="NlkTest"/>
   <title value="Norwegian Laboratory Codebook (NLK) - FHIR Implementation Guide"/>
   <status value="draft"/>
@@ -466,8 +466,19 @@
       <reference>
         <reference value="CodeSystem/norsk-laboratoriekodeverk"/>
       </reference>
-      <name value="Norwegian Laboratory Codebook"/>
-      <description value="Complete Norwegian laboratory terminology with 11,391 codes"/>
+      <name value="Norsk Laboratoriekodeverk"/>
+      <description value="Norwegian Laboratory Codebook - a comprehensive terminology for laboratory medicine in Norway"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/norsk-laboratoriekodeverk-medical-genetics"/>
+      </reference>
+      <name value="Norsk Laboratoriekodeverk - Medical Genetics"/>
+      <description value="Norwegian Laboratory Codebook - Medical Genetics domain subset with complete metadata properties. Made as an example for NLK with detailed properties for each code."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

@@ -1,7 +1,7 @@
 {
-  "version" : "0.1.0",
+  "version" : "0.2.2",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20250924105027",
+  "date" : "20250924152856",
   "name" : "hl7.fhir.no.nlk-test",
   "jurisdiction" : "urn:iso:std:iso:3166#NO"
 }

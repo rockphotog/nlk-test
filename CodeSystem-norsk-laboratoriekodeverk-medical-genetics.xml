@@ -1,0 +1,3468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="norsk-laboratoriekodeverk-medical-genetics"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem norsk-laboratoriekodeverk-medical-genetics</b></p><a name="norsk-laboratoriekodeverk-medical-genetics"> </a><a name="hcnorsk-laboratoriekodeverk-medical-genetics"> </a><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>validFrom</td><td>validFrom</td><td>dateTime</td><td>Valid from date</td></tr><tr><td>validTo</td><td>validTo</td><td>dateTime</td><td>Valid to date</td></tr><tr><td>replacedBy</td><td>replacedBy</td><td>code</td><td>Code that replaces this code</td></tr><tr><td>changeDate</td><td>changeDate</td><td>dateTime</td><td>Date of last change</td></tr><tr><td>codeDefinition</td><td>codeDefinition</td><td>string</td><td>Technical code definition</td></tr><tr><td>component</td><td>component</td><td>string</td><td>Component being measured</td></tr><tr><td>componentSpec</td><td>componentSpec</td><td>string</td><td>Component specification</td></tr><tr><td>system</td><td>system</td><td>string</td><td>System/specimen type</td></tr><tr><td>systemSpec</td><td>systemSpec</td><td>string</td><td>System specification</td></tr><tr><td>propertyType</td><td>propertyType</td><td>string</td><td>Type of property measured</td></tr><tr><td>propertySpec</td><td>propertySpec</td><td>string</td><td>Property specification</td></tr><tr><td>unit</td><td>unit</td><td>string</td><td>Unit of measurement</td></tr><tr><td>primaryDomain</td><td>primaryDomain</td><td>string</td><td>Primary medical domain</td></tr><tr><td>secondaryDomain</td><td>secondaryDomain</td><td>string</td><td>Secondary medical domain</td></tr><tr><td>grouping</td><td>grouping</td><td>string</td><td>Grouping category</td></tr></table><p><b>Concepts</b></p><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk-medical-genetics</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>validFrom</b></td><td><b>validTo</b></td><td><b>replacedBy</b></td><td><b>changeDate</b></td><td><b>component</b></td><td><b>componentSpec</b></td><td><b>system</b></td><td><b>systemSpec</b></td><td><b>propertyType</b></td><td><b>propertySpec</b></td><td><b>primaryDomain</b></td><td><b>secondaryDomain</b></td><td><b>grouping</b></td></tr><tr><td style="white-space:nowrap">NOR15177<a name="norsk-laboratoriekodeverk-medical-genetics-NOR15177"> </a></td><td>DNA-Mitokondriegenom-sekvensering</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td>Medisinsk biokjemi</td><td/></tr><tr><td style="white-space:nowrap">NOR25416<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25416"> </a></td><td>Ce-Dyrkning</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25420<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25420"> </a></td><td>RNA-Ekspresjonsprofilering</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td/><td>Undersøkelse av genekspresjonsmønster</td><td/><td>RNA</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25437<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25437"> </a></td><td>DNA-Sangersekvensering, enkeltgen</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Sangersekvensering av et spesifikt gen</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25438<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25438"> </a></td><td>DNA-Sangersekvensering, eksoner</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Sangersekvensering av ett eller flere utvalgte eksoner</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25439<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25439"> </a></td><td>DNA-Gensekvensering analysepakke</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2017-10-23T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25440<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25440"> </a></td><td>DNA-Sangersekvensering, variant</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Sangersekvensering av en kjent DNA-sekvensvariant</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25441<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25441"> </a></td><td>DNA-Analysepakke DNA-sekvensvarianter</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>Undersøkelse av flere kjente DNA-sekvensvarianter</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25442<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25442"> </a></td><td>DNA-Haplotyping</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Haplotyping for å påvise lokus for et sykdomsgen</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25443<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25443"> </a></td><td>DNA-Metyleringsprofilering</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25444<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25444"> </a></td><td>DNA-Eksomsekvensering</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25445<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25445"> </a></td><td>DNA-Genomsekvensering</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25446<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25446"> </a></td><td>DNA-Genetisk screening</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2017-11-30T23:59:00+00:00</td><td>NOR25441</td><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25463<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25463"> </a></td><td>DNA-Kopitallsanalyse gen, MLPA</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Undersøkelse for å påvise kopitallsvariasjon vha Multiplex Ligation-dependent Probe Amplification</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25464<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25464"> </a></td><td>Ce-Kromosomalt rearrangement, FISH</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Undersøkelse av kromosomale rearrangementer i celler vha Fluorescence In Situ Hybridization</td><td/><td>Celler</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25465<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25465"> </a></td><td>Ce-Mikroskopisk-karyotyping</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>Lysmikroskopisk kromosomanalyse av celler</td><td/><td>Celler</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25466<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25466"> </a></td><td>B-Mikroskopisk-karyotyping</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>Lysmikroskopisk kromosomanalyse av blod</td><td/><td>Blod</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25467<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25467"> </a></td><td>Ce-Mikroskopisk-karyotyping, kreftceller</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Lysmikroskopisk kromosomanalyse av kreftceller</td><td/><td>Celler</td><td/><td>takson</td><td>ISCN</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25468<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25468"> </a></td><td>DNA-Helgenomisk kopitallsanalyse</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2019-03-22T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25469<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25469"> </a></td><td>DNA-Helgenomisk homozygositetsanalyse</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25470<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25470"> </a></td><td>Ce-Kromosomidentitet</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2017-10-23T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25506<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25506"> </a></td><td>DNA-Kromatinanalyse</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25507<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25507"> </a></td><td>DNA-Metyleringstest, metyleringssensitiv MLPA</td><td/><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Undersøkelse for å påvise metyleringsmønster vha metyleringssensitiv Multiplex Ligation-dependent Probe Amplification</td><td/><td>DNA</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25510<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25510"> </a></td><td>B-DNA</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td>2013-11-13T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25511<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25511"> </a></td><td>Ce-DNA</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td>2013-11-13T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25512<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25512"> </a></td><td>B-RNA</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td>2013-11-13T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25513<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25513"> </a></td><td>Ce-RNA</td><td/><td>2013-01-25T00:00:00+00:00</td><td>2018-12-31T23:59:00+00:00</td><td/><td>2013-11-13T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25808<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25808"> </a></td><td>RNA-Sangersekvensering, eksoner</td><td/><td>2016-11-01T00:00:00+00:00</td><td/><td/><td>2022-11-23T00:00:00+00:00</td><td>Sangersekvensering av ett eller flere utvalgte eksoner</td><td/><td>RNA</td><td>spesifikasjon</td><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR25809<a name="norsk-laboratoriekodeverk-medical-genetics-NOR25809"> </a></td><td>DNA-Fragmentanalyse</td><td/><td>2016-11-01T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>DNA</td><td/><td>DNA</td><td>spesifikasjon</td><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35056<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35056"> </a></td><td>DNA-Helgenomisk kopitallsanalyse fam.ktr.</td><td/><td>2018-09-24T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2018-11-23T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35057<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35057"> </a></td><td>DNA-Eksom-/genomsekvensering fam.ktr.</td><td/><td>2018-09-24T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td>2018-11-23T00:00:00+00:00</td><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35103<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35103"> </a></td><td>DNA-Gensekvensering analysepakke inkl. kopitallsanalyse</td><td/><td>2019-03-22T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35104<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35104"> </a></td><td>DNA-Eksomsekvensering inkl. kopitallsanalyse</td><td/><td>2019-03-22T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35105<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35105"> </a></td><td>DNA-Genomsekvensering inkl. kopitallsanalyse</td><td/><td>2019-03-22T00:00:00+00:00</td><td>2022-12-31T23:59:00+00:00</td><td/><td/><td/><td/><td/><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35218<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35218"> </a></td><td>B-DNA ekstraksjon og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Ekstraksjon og lagring av DNA fra blodceller</td><td/><td>Blod</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35219<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35219"> </a></td><td>Ce-DNA ekstraksjon og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Ekstraksjon og lagring av DNA fra andre celler</td><td/><td>Celler</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35220<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35220"> </a></td><td>B-RNA ekstraksjon og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Ekstraksjon og lagring av RNA fra blodceller</td><td/><td>Blod</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35221<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35221"> </a></td><td>Ce-RNA ekstraksjon og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Ekstraksjon og lagring av RNA fra andre celler</td><td/><td>Celler</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35222<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35222"> </a></td><td>Ce-Dyrkning og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Dyrkning og lagring av celler</td><td/><td>Celler</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35223<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35223"> </a></td><td>B-Dyrkning og lagring</td><td/><td>2021-05-25T00:00:00+00:00</td><td/><td/><td/><td>Dyrkning og lagring av blodceller</td><td/><td>Blod</td><td/><td/><td/><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35245<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35245"> </a></td><td>RNA-NGS-transkriptom</td><td/><td>2022-03-23T00:00:00+00:00</td><td/><td/><td>2023-09-23T00:00:00+00:00</td><td>Neste generasjons sekvensering av hele transkriptomet</td><td/><td>RNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35255<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35255"> </a></td><td>DNA-Anriket panel, NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av flere gener for en gitt sykdom/syndrom (panel)</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35256<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35256"> </a></td><td>DNA-Heleksom, NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av hele eksomet</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35257<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35257"> </a></td><td>DNA-Helgenom, NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av hele genomet</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35258<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35258"> </a></td><td>Tolkning, 1-10 gener eller kjente varianter</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, 1-10 gener eller kjente varianter</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35259<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35259"> </a></td><td>Tolkning, 11-99 gener</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, 11-99 gener</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35260<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35260"> </a></td><td>Tolkning, over 100 gener</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, over 100 gener</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35261<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35261"> </a></td><td>Tolkning inkl. kopitall, 1-10 gener eller kjente varianter</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, inkludert kopitallsanalyse, 1-10 gener eller kjente varianter</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35262<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35262"> </a></td><td>Tolkning inkl. kopitall, 11-99 gener</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, inkludert kopitallsanalyse, 11-99 gener</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35263<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35263"> </a></td><td>Tolkning inkl. kopitall, over 100 gener</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Tolkning av genpanel, inkludert kopitallsanalyse, over 100 gener</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35264<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35264"> </a></td><td>Retolkning av en eller flere varianter</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Retolkning av en eller flere varianter</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35265<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35265"> </a></td><td>DNA-Heleksom, fam.ktr., NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av hele eksomet, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35266<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35266"> </a></td><td>DNA-Helgenom, fam.ktr., NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Neste generasjons sekvensering av hele genomet, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35267<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35267"> </a></td><td>DNA-Helgenomisk kopitallsanalyse, ArrayCGH</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk analyse mtp kopitallsvariasjon vha Array comparative genomic hybridization</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35268<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35268"> </a></td><td>DNA-Helgenomisk kopitallsanalyse, SNParray</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk analyse mtp kopitallsvariasjon vha Single nucleotide polymorphism microarray</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35269<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35269"> </a></td><td>DNA-Helgenomisk kopitallsanalyse, fam.ktr., ArrayCGH</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll, vha Array comparative genomic hybridization</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35270<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35270"> </a></td><td>DNA-Helgenomisk kopitallsanalyse, fam.ktr., SNParray</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll, vha Single nucleotide polymorphism microarray</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35271<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35271"> </a></td><td>DNA-Helgenomisk metyleringsanalyse, NGS</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Helgenomisk metyleringsanalyse ved Neste generasjons sekvensering</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35272<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35272"> </a></td><td>DNA-Metyleringsprofilering, matrise</td><td/><td>2022-11-23T00:00:00+00:00</td><td/><td/><td/><td>Metyleringsprofilering, matrise</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35281<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35281"> </a></td><td>DNA-Digital dråpe PCR</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Digital dråpe PCR</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35282<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35282"> </a></td><td>DNA-Optisk mapping sekvensering</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Optisk mapping sekvensering</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35283<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35283"> </a></td><td>DNA-PGT Karyomapping, fam.ktr.</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Karyomapping for haplotyping og påvisning av genetisk sekvensvariant, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35284<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35284"> </a></td><td>Ce-PGT Karyomapping, blastocyst</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Karyomapping for haplotyping og påvisning av genetisk sekvensvariant, blastocyst</td><td/><td>Celler</td><td/><td>takson</td><td>ISCN/HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35285<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35285"> </a></td><td>DNA-PGT Helgenomisk kopitallsanalyse, fam.ktr.</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35286<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35286"> </a></td><td>Ce-PGT Helgenomisk kopitallsanalyse, blastocyst</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Helgenomisk analyse mtp kopitallsvariasjon, blastocyst</td><td/><td>Celler</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35287<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35287"> </a></td><td>DNA-PGT Helgenom, fam.ktr., NGS</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Neste generasjons sekvensering av hele genomet, familiekontroll</td><td/><td>DNA</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NOR35288<a name="norsk-laboratoriekodeverk-medical-genetics-NOR35288"> </a></td><td>Ce-PGT Helgenom blastocyst, NGS</td><td/><td>2023-09-23T00:00:00+00:00</td><td/><td/><td/><td>Preimplantasjonstesting, Neste generasjons sekvensering av hele genomet, blastocyst</td><td/><td>Celler</td><td/><td>takson</td><td>HGVS</td><td>Medisinsk genetikk</td><td/><td/></tr><tr><td style="white-space:nowrap">NPU19142<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19142"> </a></td><td>DNA-MT-ATP6</td><td>DNA(spec.)—MT-ATP6 gene; seq.var. = ?</td><td>2015-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19145<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19145"> </a></td><td>DNA-MT-ND4</td><td>DNA(spec.)—MT-ND4 gene; seq.var. = ?</td><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND4-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19148<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19148"> </a></td><td>DNA-MT-TK</td><td>DNA(spec.)—MT-TK gene; seq.var. = ?</td><td>2015-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19149<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19149"> </a></td><td>DNA-MT-TL1</td><td>DNA(spec.)—MT-TL1 gene; seq.var. = ?</td><td>2015-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19179<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19179"> </a></td><td>DNA-PYGM-gen</td><td>DNA(spec.)—PYGM gene; seq.var. = ?</td><td>2022-11-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>PYGM-gen</td><td/><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19293<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19293"> </a></td><td>DNA-MT-ATP6(8993T&gt;G, Leu156Arg)</td><td>DNA(spec.)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;G); entitic num.(0 1 2) = ?</td><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td>NC_012920.1:g.8993T&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19294<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19294"> </a></td><td>DNA-MT-ATP6(8993T&gt;C)</td><td>DNA(spec.)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td>NC_012920.1:g.8993T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19296<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19296"> </a></td><td>DNA-MT-RNR1(1555A&gt;G)</td><td>DNA(spec.)—MT-RNR1 gene(NC_012920.1:g.1555A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-RNR1-gen</td><td>NC_012920.1:g.1555A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19297<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19297"> </a></td><td>DNA-MT-TK(8344A&gt;G)</td><td>DNA(spec.)—MT-TK gene(NC_012920.1:g.8344A&gt;G); entitic num.(0 1 2) = ?</td><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td>NC_012920.1:g.8344A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU19298<a name="norsk-laboratoriekodeverk-medical-genetics-NPU19298"> </a></td><td>DNA-MT-TL1(3243A&gt;G)</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); entitic num.(0 1 2) = ?</td><td>2013-01-25T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3243A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57092<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57092"> </a></td><td>DNA(B)-MT-TL1-gen (3243A&gt;G)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3243A&gt;G</td><td>DNA</td><td>Blod</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57093<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57093"> </a></td><td>DNA(B)-MT-ATP6-gen (8993T&gt;G)</td><td>DNA(B)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;G); entitic num.(0 1 2) = ?</td><td>2017-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td>NC_012920.1:g.8993T&gt;G</td><td>DNA</td><td>Blod</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57096<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57096"> </a></td><td>DNA(B)-MT-TK-gen (8344A&gt;G)</td><td>DNA(B)—MT-TK gene(NC_012920.1:g.8344A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-03-01T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td>NC_012920.1:g.8344A&gt;G</td><td>DNA</td><td>Blod</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57605<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57605"> </a></td><td>DNA-MT-TL1(3256C&gt;T)</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3256C&gt;T); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3256C&gt;T</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57612<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57612"> </a></td><td>DNA-MT-TL1(3271T&gt;C)</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3271T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3271T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57613<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57613"> </a></td><td>DNA-MT-CO1(7445A&gt;G)</td><td>DNA(spec.)—MT-CO1 gene(NC_012920.1:g.7445A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-CO1-gen</td><td>NC_012920.1:g.7445A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57614<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57614"> </a></td><td>DNA-MT-TS1(7471_7472insC)</td><td>DNA(spec.)—MT-TS1 gene(NC_012920.1:g.7471_7472insC); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TS1-gen</td><td>NC_012920.1:g.7471_7472insC</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57629<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57629"> </a></td><td>DNA-MT-TK(8356T&gt;C)</td><td>DNA(spec.)—MT-TK gene(NC_012920.1:g.8356T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td>NC_012920.1:g.8356T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57630<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57630"> </a></td><td>DNA-MT-ND5(13513G&gt;A)</td><td>DNA(spec.)—MT-ND5 gene(NC_012920.1:g.13513G&gt;A); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND5-gen</td><td>NC_012920.1:g.13513G&gt;A</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57631<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57631"> </a></td><td>DNA-MT-ND6(14459G&gt;A)</td><td>DNA(spec.)—MT-ND6 gene(NC_012920.1:g.14459G&gt;A); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND6-gen</td><td>NC_012920.1:g.14459G&gt;A</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57632<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57632"> </a></td><td>DNA-MT-ND1(3460G&gt;A)</td><td>DNA(spec.)—MT-ND1 gene(NC_012920.1:g.3460G&gt;A); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND1-gen</td><td>NC_012920.1:g.3460G&gt;A</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57633<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57633"> </a></td><td>DNA-MT-ND4(11778G&gt;A)</td><td>DNA(spec.)—MT-ND4 gene(NC_012920.1:g.11778G&gt;A); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND4-gen</td><td>NC_012920.1:g.11778G&gt;A</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57634<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57634"> </a></td><td>DNA-MT-ND6(14484T&gt;C)</td><td>DNA(spec.)—MT-ND6 gene(NC_012920.1:g.14484T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND6-gen</td><td>NC_012920.1:g.14484T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57635<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57635"> </a></td><td>DNA-MT-ATP6(9185(T&gt;C)</td><td>DNA(spec.)—MT-ND5 gene(NC_012920.1:g.9185T&gt;C); entitic num.(0 1 2) = ?</td><td>2017-08-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ND5-gen</td><td>NC_012920.1:g.9185T&gt;C</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57792<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57792"> </a></td><td>DNA(B)-MT-TL1 gen(3252A&gt;G)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); entitic num.(0 1 2) = ?</td><td>2017-10-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252A&gt;G</td><td>DNA</td><td>Blod</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU57803<a name="norsk-laboratoriekodeverk-medical-genetics-NPU57803"> </a></td><td>DNA-MT-TL1 gen(3252A&gt;G)</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); entitic num.(0 1 2) = ?</td><td>2018-02-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252A&gt;G</td><td>DNA</td><td>spesifikasjon</td><td>entitisk antall</td><td>0 1 2</td><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58187<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58187"> </a></td><td>DNA-MT-TL1-gen</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3271); seq.var. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3271</td><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58188<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58188"> </a></td><td>DNA-MT-TL1-gen</td><td>DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3252); seq.var. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252</td><td>DNA</td><td>spesifikasjon</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58190<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58190"> </a></td><td>DNA(B)-MT-TL1-gen</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3252); seq.var. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252</td><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58191<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58191"> </a></td><td>DNA(B)-MT-TL1-gen</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3271); seq.var. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3271</td><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58206<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58206"> </a></td><td>DNA(B)-MT-TL1-gen (3271T&gt;C)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3271T&gt;C); arb.cont. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3271T&gt;C</td><td>DNA</td><td>Blod</td><td>arbitrært innhold</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58207<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58207"> </a></td><td>DNA(B)-MT-TL1-gen (3252A&gt;G)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); arb.cont. = ?</td><td>2018-03-23T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3252A&gt;G</td><td>DNA</td><td>Blod</td><td>arbitrært innhold</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58269<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58269"> </a></td><td>DNA(B)-MT-TL1-gen (3243A&gt;G)</td><td>DNA(B)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); arb.cont. = ?</td><td>2018-06-22T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td>NC_012920.1:g.3243A&gt;G</td><td>DNA</td><td>Blod</td><td>arbitrært innhold</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58272<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58272"> </a></td><td>DNA(B)-MT-TL1-gen</td><td>DNA(B)—MT-TL1 gene; seq.var. = ?</td><td>2018-06-22T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TL1-gen</td><td/><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58273<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58273"> </a></td><td>DNA(B)-MT-TK-gen</td><td>DNA(B)—MT-TK gene; seq.var. = ?</td><td>2018-06-22T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-TK-gen</td><td/><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr><tr><td style="white-space:nowrap">NPU58274<a name="norsk-laboratoriekodeverk-medical-genetics-NPU58274"> </a></td><td>DNA(B)-MT-ATP6-gen</td><td>DNA(B)—MT-ATP6 gene; seq.var. = ?</td><td>2018-06-22T00:00:00+00:00</td><td/><td/><td>2024-11-23T00:00:00+00:00</td><td>MT-ATP6-gen</td><td/><td>DNA</td><td>Blod</td><td>sekvensvariasjon</td><td/><td>Medisinsk biokjemi</td><td>Medisinsk genetikk</td><td>Genetiske undersøkelser</td></tr></table></div>
+  </text>
+  <url value="http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk-medical-genetics"/>
+  <version value="0.2.2"/>
+  <name value="NorskLaboratoriekodeverkMedicalGenetics"/>
+  <title value="Norsk Laboratoriekodeverk - Medical Genetics"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2025-09-24"/>
+  <publisher value="Espen"/>
+  <contact>
+    <name value="Espen"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/rockphotog/"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Espen"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://github.com/rockphotog/"/>
+    </telecom>
+  </contact>
+  <description value="Norwegian Laboratory Codebook - Medical Genetics domain subset with complete metadata properties. Made as an example for NLK with detailed properties for each code."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="103"/>
+  <property>
+    <code value="validFrom"/>
+    <description value="Valid from date"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="validTo"/>
+    <description value="Valid to date"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="replacedBy"/>
+    <description value="Code that replaces this code"/>
+    <type value="code"/>
+  </property>
+  <property>
+    <code value="changeDate"/>
+    <description value="Date of last change"/>
+    <type value="dateTime"/>
+  </property>
+  <property>
+    <code value="codeDefinition"/>
+    <description value="Technical code definition"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="component"/>
+    <description value="Component being measured"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="componentSpec"/>
+    <description value="Component specification"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="system"/>
+    <description value="System/specimen type"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="systemSpec"/>
+    <description value="System specification"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="propertyType"/>
+    <description value="Type of property measured"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="propertySpec"/>
+    <description value="Property specification"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="unit"/>
+    <description value="Unit of measurement"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="primaryDomain"/>
+    <description value="Primary medical domain"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="secondaryDomain"/>
+    <description value="Secondary medical domain"/>
+    <type value="string"/>
+  </property>
+  <property>
+    <code value="grouping"/>
+    <description value="Grouping category"/>
+    <type value="string"/>
+  </property>
+  <concept>
+    <code value="NOR15177"/>
+    <display value="DNA-Mitokondriegenom-sekvensering"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25416"/>
+    <display value="Ce-Dyrkning"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2018-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25420"/>
+    <display value="RNA-Ekspresjonsprofilering"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Undersøkelse av genekspresjonsmønster"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="RNA"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25437"/>
+    <display value="DNA-Sangersekvensering, enkeltgen"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Sangersekvensering av et spesifikt gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25438"/>
+    <display value="DNA-Sangersekvensering, eksoner"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Sangersekvensering av ett eller flere utvalgte eksoner"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25439"/>
+    <display value="DNA-Gensekvensering analysepakke"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2017-10-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25440"/>
+    <display value="DNA-Sangersekvensering, variant"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Sangersekvensering av en kjent DNA-sekvensvariant"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25441"/>
+    <display value="DNA-Analysepakke DNA-sekvensvarianter"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Undersøkelse av flere kjente DNA-sekvensvarianter"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25442"/>
+    <display value="DNA-Haplotyping"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Haplotyping for å påvise lokus for et sykdomsgen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25443"/>
+    <display value="DNA-Metyleringsprofilering"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25444"/>
+    <display value="DNA-Eksomsekvensering"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25445"/>
+    <display value="DNA-Genomsekvensering"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25446"/>
+    <display value="DNA-Genetisk screening"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2017-11-30T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="replacedBy"/>
+      <valueCode value="NOR25441"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25463"/>
+    <display value="DNA-Kopitallsanalyse gen, MLPA"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Undersøkelse for å påvise kopitallsvariasjon vha Multiplex Ligation-dependent Probe Amplification"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25464"/>
+    <display value="Ce-Kromosomalt rearrangement, FISH"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Undersøkelse av kromosomale rearrangementer i celler vha Fluorescence In Situ Hybridization"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25465"/>
+    <display value="Ce-Mikroskopisk-karyotyping"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Lysmikroskopisk kromosomanalyse av celler"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25466"/>
+    <display value="B-Mikroskopisk-karyotyping"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Lysmikroskopisk kromosomanalyse av blod"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25467"/>
+    <display value="Ce-Mikroskopisk-karyotyping, kreftceller"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Lysmikroskopisk kromosomanalyse av kreftceller"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25468"/>
+    <display value="DNA-Helgenomisk kopitallsanalyse"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2019-03-22T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25469"/>
+    <display value="DNA-Helgenomisk homozygositetsanalyse"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25470"/>
+    <display value="Ce-Kromosomidentitet"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2017-10-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25506"/>
+    <display value="DNA-Kromatinanalyse"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25507"/>
+    <display value="DNA-Metyleringstest, metyleringssensitiv MLPA"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Undersøkelse for å påvise metyleringsmønster vha metyleringssensitiv Multiplex Ligation-dependent Probe Amplification"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25510"/>
+    <display value="B-DNA"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2018-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2013-11-13T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25511"/>
+    <display value="Ce-DNA"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2018-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2013-11-13T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25512"/>
+    <display value="B-RNA"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2018-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2013-11-13T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25513"/>
+    <display value="Ce-RNA"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2018-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2013-11-13T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25808"/>
+    <display value="RNA-Sangersekvensering, eksoner"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2016-11-01T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Sangersekvensering av ett eller flere utvalgte eksoner"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="RNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR25809"/>
+    <display value="DNA-Fragmentanalyse"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2016-11-01T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35056"/>
+    <display value="DNA-Helgenomisk kopitallsanalyse fam.ktr."/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-09-24T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2018-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35057"/>
+    <display value="DNA-Eksom-/genomsekvensering fam.ktr."/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-09-24T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2018-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35103"/>
+    <display value="DNA-Gensekvensering analysepakke inkl. kopitallsanalyse"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2019-03-22T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35104"/>
+    <display value="DNA-Eksomsekvensering inkl. kopitallsanalyse"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2019-03-22T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35105"/>
+    <display value="DNA-Genomsekvensering inkl. kopitallsanalyse"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2019-03-22T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="validTo"/>
+      <valueDateTime value="2022-12-31T23:59:00+00:00"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35218"/>
+    <display value="B-DNA ekstraksjon og lagring"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2021-05-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Ekstraksjon og lagring av DNA fra blodceller"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35219"/>
+    <display value="Ce-DNA ekstraksjon og lagring"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2021-05-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Ekstraksjon og lagring av DNA fra andre celler"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35220"/>
+    <display value="B-RNA ekstraksjon og lagring"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2021-05-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Ekstraksjon og lagring av RNA fra blodceller"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35221"/>
+    <display value="Ce-RNA ekstraksjon og lagring"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2021-05-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Ekstraksjon og lagring av RNA fra andre celler"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35222"/>
+    <display value="Ce-Dyrkning og lagring"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2021-05-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Dyrkning og lagring av celler"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35223"/>
+    <display value="B-Dyrkning og lagring"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2021-05-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Dyrkning og lagring av blodceller"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35245"/>
+    <display value="RNA-NGS-transkriptom"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-03-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Neste generasjons sekvensering av hele transkriptomet"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="RNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35255"/>
+    <display value="DNA-Anriket panel, NGS"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Neste generasjons sekvensering av flere gener for en gitt sykdom/syndrom (panel)"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35256"/>
+    <display value="DNA-Heleksom, NGS"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Neste generasjons sekvensering av hele eksomet"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35257"/>
+    <display value="DNA-Helgenom, NGS"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Neste generasjons sekvensering av hele genomet"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35258"/>
+    <display value="Tolkning, 1-10 gener eller kjente varianter"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Tolkning av genpanel, 1-10 gener eller kjente varianter"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35259"/>
+    <display value="Tolkning, 11-99 gener"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Tolkning av genpanel, 11-99 gener"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35260"/>
+    <display value="Tolkning, over 100 gener"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Tolkning av genpanel, over 100 gener"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35261"/>
+    <display value="Tolkning inkl. kopitall, 1-10 gener eller kjente varianter"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Tolkning av genpanel, inkludert kopitallsanalyse, 1-10 gener eller kjente varianter"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35262"/>
+    <display value="Tolkning inkl. kopitall, 11-99 gener"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Tolkning av genpanel, inkludert kopitallsanalyse, 11-99 gener"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35263"/>
+    <display value="Tolkning inkl. kopitall, over 100 gener"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Tolkning av genpanel, inkludert kopitallsanalyse, over 100 gener"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35264"/>
+    <display value="Retolkning av en eller flere varianter"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Retolkning av en eller flere varianter"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35265"/>
+    <display value="DNA-Heleksom, fam.ktr., NGS"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Neste generasjons sekvensering av hele eksomet, familiekontroll"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35266"/>
+    <display value="DNA-Helgenom, fam.ktr., NGS"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Neste generasjons sekvensering av hele genomet, familiekontroll"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35267"/>
+    <display value="DNA-Helgenomisk kopitallsanalyse, ArrayCGH"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Helgenomisk analyse mtp kopitallsvariasjon vha Array comparative genomic hybridization"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35268"/>
+    <display value="DNA-Helgenomisk kopitallsanalyse, SNParray"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Helgenomisk analyse mtp kopitallsvariasjon vha Single nucleotide polymorphism microarray"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35269"/>
+    <display value="DNA-Helgenomisk kopitallsanalyse, fam.ktr., ArrayCGH"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll, vha Array comparative genomic hybridization"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35270"/>
+    <display value="DNA-Helgenomisk kopitallsanalyse, fam.ktr., SNParray"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll, vha Single nucleotide polymorphism microarray"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35271"/>
+    <display value="DNA-Helgenomisk metyleringsanalyse, NGS"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Helgenomisk metyleringsanalyse ved Neste generasjons sekvensering"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35272"/>
+    <display value="DNA-Metyleringsprofilering, matrise"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Metyleringsprofilering, matrise"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35281"/>
+    <display value="DNA-Digital dråpe PCR"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Digital dråpe PCR"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35282"/>
+    <display value="DNA-Optisk mapping sekvensering"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Optisk mapping sekvensering"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35283"/>
+    <display value="DNA-PGT Karyomapping, fam.ktr."/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Preimplantasjonstesting, Karyomapping for haplotyping og påvisning av genetisk sekvensvariant, familiekontroll"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35284"/>
+    <display value="Ce-PGT Karyomapping, blastocyst"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Preimplantasjonstesting, Karyomapping for haplotyping og påvisning av genetisk sekvensvariant, blastocyst"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="ISCN/HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35285"/>
+    <display value="DNA-PGT Helgenomisk kopitallsanalyse, fam.ktr."/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Preimplantasjonstesting, Helgenomisk analyse mtp kopitallsvariasjon, familiekontroll"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35286"/>
+    <display value="Ce-PGT Helgenomisk kopitallsanalyse, blastocyst"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Preimplantasjonstesting, Helgenomisk analyse mtp kopitallsvariasjon, blastocyst"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35287"/>
+    <display value="DNA-PGT Helgenom, fam.ktr., NGS"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Preimplantasjonstesting, Neste generasjons sekvensering av hele genomet, familiekontroll"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NOR35288"/>
+    <display value="Ce-PGT Helgenom blastocyst, NGS"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2023-09-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="Preimplantasjonstesting, Neste generasjons sekvensering av hele genomet, blastocyst"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="Celler"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="takson"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="HGVS"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19142"/>
+    <display value="DNA-MT-ATP6"/>
+    <definition value="DNA(spec.)—MT-ATP6 gene; seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2015-03-01T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ATP6-gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19145"/>
+    <display value="DNA-MT-ND4"/>
+    <definition value="DNA(spec.)—MT-ND4 gene; seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ND4-gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19148"/>
+    <display value="DNA-MT-TK"/>
+    <definition value="DNA(spec.)—MT-TK gene; seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2015-03-01T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TK-gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19149"/>
+    <display value="DNA-MT-TL1"/>
+    <definition value="DNA(spec.)—MT-TL1 gene; seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2015-03-01T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19179"/>
+    <display value="DNA-PYGM-gen"/>
+    <definition value="DNA(spec.)—PYGM gene; seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2022-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="PYGM-gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19293"/>
+    <display value="DNA-MT-ATP6(8993T&gt;G, Leu156Arg)"/>
+    <definition value="DNA(spec.)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ATP6-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.8993T&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19294"/>
+    <display value="DNA-MT-ATP6(8993T&gt;C)"/>
+    <definition value="DNA(spec.)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;C); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ATP6-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.8993T&gt;C"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19296"/>
+    <display value="DNA-MT-RNR1(1555A&gt;G)"/>
+    <definition value="DNA(spec.)—MT-RNR1 gene(NC_012920.1:g.1555A&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-RNR1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.1555A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19297"/>
+    <display value="DNA-MT-TK(8344A&gt;G)"/>
+    <definition value="DNA(spec.)—MT-TK gene(NC_012920.1:g.8344A&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TK-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.8344A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU19298"/>
+    <display value="DNA-MT-TL1(3243A&gt;G)"/>
+    <definition value="DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2013-01-25T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3243A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57092"/>
+    <display value="DNA(B)-MT-TL1-gen (3243A&gt;G)"/>
+    <definition value="DNA(B)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-03-01T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3243A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57093"/>
+    <display value="DNA(B)-MT-ATP6-gen (8993T&gt;G)"/>
+    <definition value="DNA(B)—MT-ATP6 gene(NC_012920.1:g.8993T&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-03-01T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ATP6-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.8993T&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57096"/>
+    <display value="DNA(B)-MT-TK-gen (8344A&gt;G)"/>
+    <definition value="DNA(B)—MT-TK gene(NC_012920.1:g.8344A&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-03-01T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TK-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.8344A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57605"/>
+    <display value="DNA-MT-TL1(3256C&gt;T)"/>
+    <definition value="DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3256C&gt;T); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3256C&gt;T"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57612"/>
+    <display value="DNA-MT-TL1(3271T&gt;C)"/>
+    <definition value="DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3271T&gt;C); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3271T&gt;C"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57613"/>
+    <display value="DNA-MT-CO1(7445A&gt;G)"/>
+    <definition value="DNA(spec.)—MT-CO1 gene(NC_012920.1:g.7445A&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-CO1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.7445A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57614"/>
+    <display value="DNA-MT-TS1(7471_7472insC)"/>
+    <definition value="DNA(spec.)—MT-TS1 gene(NC_012920.1:g.7471_7472insC); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TS1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.7471_7472insC"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57629"/>
+    <display value="DNA-MT-TK(8356T&gt;C)"/>
+    <definition value="DNA(spec.)—MT-TK gene(NC_012920.1:g.8356T&gt;C); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TK-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.8356T&gt;C"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57630"/>
+    <display value="DNA-MT-ND5(13513G&gt;A)"/>
+    <definition value="DNA(spec.)—MT-ND5 gene(NC_012920.1:g.13513G&gt;A); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ND5-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.13513G&gt;A"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57631"/>
+    <display value="DNA-MT-ND6(14459G&gt;A)"/>
+    <definition value="DNA(spec.)—MT-ND6 gene(NC_012920.1:g.14459G&gt;A); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ND6-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.14459G&gt;A"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57632"/>
+    <display value="DNA-MT-ND1(3460G&gt;A)"/>
+    <definition value="DNA(spec.)—MT-ND1 gene(NC_012920.1:g.3460G&gt;A); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ND1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3460G&gt;A"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57633"/>
+    <display value="DNA-MT-ND4(11778G&gt;A)"/>
+    <definition value="DNA(spec.)—MT-ND4 gene(NC_012920.1:g.11778G&gt;A); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ND4-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.11778G&gt;A"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57634"/>
+    <display value="DNA-MT-ND6(14484T&gt;C)"/>
+    <definition value="DNA(spec.)—MT-ND6 gene(NC_012920.1:g.14484T&gt;C); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ND6-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.14484T&gt;C"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57635"/>
+    <display value="DNA-MT-ATP6(9185(T&gt;C)"/>
+    <definition value="DNA(spec.)—MT-ND5 gene(NC_012920.1:g.9185T&gt;C); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-08-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ND5-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.9185T&gt;C"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57792"/>
+    <display value="DNA(B)-MT-TL1 gen(3252A&gt;G)"/>
+    <definition value="DNA(B)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2017-10-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3252A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU57803"/>
+    <display value="DNA-MT-TL1 gen(3252A&gt;G)"/>
+    <definition value="DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); entitic num.(0 1 2) = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-02-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3252A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="entitisk antall"/>
+    </property>
+    <property>
+      <code value="propertySpec"/>
+      <valueString value="0 1 2"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58187"/>
+    <display value="DNA-MT-TL1-gen"/>
+    <definition value="DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3271); seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-03-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3271"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58188"/>
+    <display value="DNA-MT-TL1-gen"/>
+    <definition value="DNA(spec.)—MT-TL1 gene(NC_012920.1:g.3252); seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-03-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3252"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="spesifikasjon"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58190"/>
+    <display value="DNA(B)-MT-TL1-gen"/>
+    <definition value="DNA(B)—MT-TL1 gene(NC_012920.1:g.3252); seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-03-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3252"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58191"/>
+    <display value="DNA(B)-MT-TL1-gen"/>
+    <definition value="DNA(B)—MT-TL1 gene(NC_012920.1:g.3271); seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-03-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3271"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58206"/>
+    <display value="DNA(B)-MT-TL1-gen (3271T&gt;C)"/>
+    <definition value="DNA(B)—MT-TL1 gene(NC_012920.1:g.3271T&gt;C); arb.cont. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-03-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3271T&gt;C"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="arbitrært innhold"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58207"/>
+    <display value="DNA(B)-MT-TL1-gen (3252A&gt;G)"/>
+    <definition value="DNA(B)—MT-TL1 gene(NC_012920.1:g.3252A&gt;G); arb.cont. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-03-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3252A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="arbitrært innhold"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58269"/>
+    <display value="DNA(B)-MT-TL1-gen (3243A&gt;G)"/>
+    <definition value="DNA(B)—MT-TL1 gene(NC_012920.1:g.3243A&gt;G); arb.cont. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-06-22T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="componentSpec"/>
+      <valueString value="NC_012920.1:g.3243A&gt;G"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="arbitrært innhold"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58272"/>
+    <display value="DNA(B)-MT-TL1-gen"/>
+    <definition value="DNA(B)—MT-TL1 gene; seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-06-22T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TL1-gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58273"/>
+    <display value="DNA(B)-MT-TK-gen"/>
+    <definition value="DNA(B)—MT-TK gene; seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-06-22T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-TK-gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="NPU58274"/>
+    <display value="DNA(B)-MT-ATP6-gen"/>
+    <definition value="DNA(B)—MT-ATP6 gene; seq.var. = ?"/>
+    <property>
+      <code value="validFrom"/>
+      <valueDateTime value="2018-06-22T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="changeDate"/>
+      <valueDateTime value="2024-11-23T00:00:00+00:00"/>
+    </property>
+    <property>
+      <code value="component"/>
+      <valueString value="MT-ATP6-gen"/>
+    </property>
+    <property>
+      <code value="system"/>
+      <valueString value="DNA"/>
+    </property>
+    <property>
+      <code value="systemSpec"/>
+      <valueString value="Blod"/>
+    </property>
+    <property>
+      <code value="propertyType"/>
+      <valueString value="sekvensvariasjon"/>
+    </property>
+    <property>
+      <code value="primaryDomain"/>
+      <valueString value="Medisinsk biokjemi"/>
+    </property>
+    <property>
+      <code value="secondaryDomain"/>
+      <valueString value="Medisinsk genetikk"/>
+    </property>
+    <property>
+      <code value="grouping"/>
+      <valueString value="Genetiske undersøkelser"/>
+    </property>
+  </concept>
+</CodeSystem>

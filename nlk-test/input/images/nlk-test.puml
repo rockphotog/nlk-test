@@ -1,14 +1,8 @@
 @startuml NLK-CodeSystem-Structure
 
-!define LIGHTBLUE #E1F5FE
-!define LIGHTGREEN #E8F5E8
-!define LIGHTYELLOW #FFF9C4
-!define LIGHTPINK #FCE4EC
-!define LIGHTGRAY #F5F5F5
-
 title Norwegian Laboratory Codebook (NLK) - CodeSystem Structure
 
-package "FHIR R4 Base" LIGHTGRAY {
+package "FHIR R4 Base" #F5F5F5 {
     abstract class CodeSystem {
         +url: uri
         +version: string
@@ -43,12 +37,12 @@ package "FHIR R4 Base" LIGHTGRAY {
     }
 }
 
-package "Norwegian Laboratory Codebook" LIGHTBLUE {
+package "Norwegian Laboratory Codebook" #E1F5FE {
     class NorskLaboratoriekodeverk {
-        +id: "norsk-laboratoriekodeverk"
-        +url: "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk"
-        +version: "7280.77"
-        +status: #active
+        +id: string
+        +url: uri
+        +version: string
+        +status: code
         +count: 11391
         +activeCount: 9679
         +historicalCount: 1712
@@ -94,8 +88,9 @@ package "Norwegian Laboratory Codebook" LIGHTBLUE {
     }
 }
 
-package "Medical Domains" LIGHTGREEN {
-    enum MedicalDomain {
+package "Medical Domains" #E8F5E8 {
+    class MedicalDomain {
+        <<enumeration>>
         MEDISINSK_BIOKJEMI
         IMMUNOLOGI_TRANSFUSJON
         MEDISINSK_MIKROBIOLOGI
@@ -110,8 +105,8 @@ package "Medical Domains" LIGHTGREEN {
 
     class MedisinskBiokjemi {
         +codeCount: 2881
-        +displayName: "Medisinsk biokjemi"
-        +description: "Medical Biochemistry"
+        +displayName: string
+        +description: string
         --
         +getClinicalChemistryTests(): NLKConcept[]
         +getMetabolicMarkers(): NLKConcept[]
@@ -119,8 +114,8 @@ package "Medical Domains" LIGHTGREEN {
 
     class ImmunologiTransfusjon {
         +codeCount: 3231
-        +displayName: "Immunologi og transfusjonsmedisin"
-        +description: "Immunology & Transfusion Medicine"
+        +displayName: string
+        +description: string
         --
         +getImmunologyTests(): NLKConcept[]
         +getTransfusionTests(): NLKConcept[]
@@ -128,8 +123,8 @@ package "Medical Domains" LIGHTGREEN {
 
     class MedisinskMikrobiologi {
         +codeCount: 2547
-        +displayName: "Medisinsk mikrobiologi"
-        +description: "Medical Microbiology"
+        +displayName: string
+        +description: string
         --
         +getBacteriologyTests(): NLKConcept[]
         +getVirologyTests(): NLKConcept[]
@@ -138,8 +133,8 @@ package "Medical Domains" LIGHTGREEN {
 
     class KliniskFarmakologi {
         +codeCount: 2642
-        +displayName: "Klinisk farmakologi"
-        +description: "Clinical Pharmacology"
+        +displayName: string
+        +description: string
         --
         +getDrugLevelTests(): NLKConcept[]
         +getToxicologyTests(): NLKConcept[]
@@ -147,8 +142,8 @@ package "Medical Domains" LIGHTGREEN {
 
     class MedisinskGenetikk {
         +codeCount: 67
-        +displayName: "Medisinsk genetikk"
-        +description: "Medical Genetics"
+        +displayName: string
+        +description: string
         --
         +getGeneticTests(): NLKConcept[]
         +getCytogeneticTests(): NLKConcept[]
@@ -156,18 +151,18 @@ package "Medical Domains" LIGHTGREEN {
 
     class Patologi {
         +codeCount: 27
-        +displayName: "Patologi"
-        +description: "Pathology"
+        +displayName: string
+        +description: string
         --
         +getHistopathologyTests(): NLKConcept[]
         +getCytopathologyTests(): NLKConcept[]
     }
 }
 
-package "FHIR Integration" LIGHTYELLOW {
+package "FHIR Integration" #FFF9C4 {
     class ObservationProfile {
         +code: CodeableConcept
-        +system: "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk"
+        +system: uri
         --
         +validateNLKCode(): boolean
         +getLabTestInfo(): NLKConcept
@@ -182,10 +177,10 @@ package "FHIR Integration" LIGHTYELLOW {
     }
 }
 
-package "Norwegian Health Context" LIGHTPINK {
+package "Norwegian Health Context" #FCE4EC {
     class HL7Norway {
-        +basisPackage: "hl7.fhir.no.basis"
-        +version: "2.0.17"
+        +basisPackage: string
+        +version: string
         --
         +getNorwegianProfiles(): Profile[]
         +getJurisdictionRules(): CodeableConcept[]

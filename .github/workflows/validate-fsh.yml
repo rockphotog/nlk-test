@@ -94,7 +94,8 @@ jobs:
         find ${{ env.IG_SHORTNAME }}/input/fsh/ -name "*.fsh" -type f
         echo "Running SUSHI compilation and validation..."
         cd ${{ env.IG_SHORTNAME }}/
-        sushi build --log-path sushi-validation.log
+        sushi . > sushi-validation.log 2>&1 || (cat sushi-validation.log && exit 1)
+        cat sushi-validation.log
         echo "✅ SUSHI validation complete - only input directory used"
 
     - name: Download FHIR Validator (optional additional validation)

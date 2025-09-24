@@ -13,8 +13,9 @@ The GitHub Pages deployment is now **ACTIVATED** and configured to automatically
 
 ### Deployment Target
 
-- **Source branch**: `main` (where workflow runs)
-- **Deployment branch**: `gh-pages` (where GitHub Pages publishes from)
+- **Source branch**: `main` (where workflow runs and source code lives)
+- **Deployment method**: GitHub Pages artifact upload (official GitHub Pages deployment)
+- **Environment**: `github-pages` environment with proper protection rules
 
 ### Deployment URL
 The FHIR IG will be available at: **https://rockphotog.github.io/nlk-test/**
@@ -45,11 +46,13 @@ To manually trigger a deployment:
 ## 📊 Build Process
 
 The deployment workflow:
+
 1. Sets up Java 17, Ruby/Jekyll, and Node.js 20
 2. Installs FHIR packages and dependencies
 3. Runs SUSHI to compile FSH files
 4. Executes IG Publisher to generate the complete IG
-5. Deploys the output to GitHub Pages
+5. Uploads build artifact to GitHub Pages
+6. Deploys via official GitHub Pages deployment action
 
 ---
 *Last updated: September 24, 2025*

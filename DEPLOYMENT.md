@@ -14,8 +14,8 @@ The GitHub Pages deployment is now **ACTIVATED** and configured to automatically
 ### Deployment Target
 
 - **Source branch**: `main` (where workflow runs and source code lives)
-- **Deployment method**: GitHub Pages artifact upload (official GitHub Pages deployment)
-- **Environment**: `github-pages` environment with proper protection rules
+- **Deployment method**: Direct deployment to `gh-pages` branch using peaceiris/actions-gh-pages
+- **No environment restrictions**: Bypasses GitHub Pages environment protection rules
 
 ### Deployment URL
 The FHIR IG will be available at: **https://rockphotog.github.io/nlk-test/**

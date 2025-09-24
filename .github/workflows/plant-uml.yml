@@ -4,12 +4,12 @@ on:
   push:
     branches: [main]
     paths:
-      - 'nlk-test/input/images/*.puml'
+      - '**/*.puml'
       - '.github/workflows/plant-uml.yml'
   pull_request:
     branches: [main]
     paths:
-      - 'nlk-test/input/images/*.puml'
+      - '**/*.puml'
   workflow_dispatch:
 
 permissions:

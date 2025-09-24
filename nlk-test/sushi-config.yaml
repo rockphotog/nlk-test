@@ -25,15 +25,6 @@ contact:
     telecom:
       - system: url
         value: https://github.com/rockphotog/
-author:
-  - name: Espen
-keywords:
-  - Norwegian
-  - Laboratory
-  - Terminology
-  - CodeSystem
-  - NLK
-  - Laboratoriekodeverk
 dependencies:
   hl7.fhir.no.basis: 2.2.0
 

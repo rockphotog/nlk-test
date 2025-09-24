@@ -1,0 +1,37 @@
+Norwegian Laboratory Codebook - Data Summary
+Generated: 2025-09-24 13:09:48.863149
+Source: nlk-test/resources/Norsk Laboratoriekodeverk 7280.77-clean.xlsx
+
+Dataset Statistics:
+- Total records: 11,395
+- Total columns: 17
+- Memory usage: 11.96 MB
+
+Column Information:
+ 1. kode                           - 11,395 non-null values
+ 2. gyldig_fra                     - 11,395 non-null values
+ 3. gyldig_til                     - 1,716 non-null values
+ 4. erstattes_av                   - 1,225 non-null values
+ 5. endringsdato                   - 9,424 non-null values
+ 6. norsk_bruksnavn                - 11,395 non-null values
+ 7. kodedefinisjon                 - 10,604 non-null values
+ 8. komponent                      - 10,605 non-null values
+ 9. komponent_spesifikasjon        - 3,499 non-null values
+10. system                         - 10,605 non-null values
+11. system_spesifikasjon           - 2,540 non-null values
+12. egenskapsart                   - 10,589 non-null values
+13. egenskapsart_spesifikasjon     - 6,726 non-null values
+14. enhet                          - 5,895 non-null values
+15. primært_fagområde              - 11,395 non-null values
+16. sekundært_fagområde            - 474 non-null values
+17. gruppering                     - 9,803 non-null values
+
+Data Quality:
+- Duplicate rows: 0
+- Rows with all nulls: 0
+
+Sample Data (first 3 rows):
+       kode           gyldig_fra           gyldig_til erstattes_av         endringsdato norsk_bruksnavn                                    kodedefinisjon                  komponent komponent_spesifikasjon  system system_spesifikasjon                        egenskapsart egenskapsart_spesifikasjon      enhet   primært_fagområde sekundært_fagområde                        gruppering
+0  NOR05001  2013-01-25 00:00:00  2020-02-29 23:59:00     NPU29069                 None           P-ACE                                              None                       None                    None    None                 None                                None                       None       None  Medisinsk biokjemi                None                              None
+1  NOR05003  2013-01-25 00:00:00                 None         None  2022-01-24 00:00:00  Us-Osmolalitet   Syst(spec.)—Solute; molal.(proc.) = ? mosmol/kg  Osmotisk aktive partikler                    None  System        spesifikasjon                           molalitet          prosedyreavhengig  mosmol/kg  Medisinsk biokjemi                None                     Elektrolytter
+2  NOR05007  2013-01-25 00:00:00                 None         None  2021-01-25 00:00:00         Us-ALAT  Syst(spec.)—Alanine transaminase; cat.c. = ? U/L     Alaninaminotransferase                    None  System        spesifikasjon  katalytisk aktivitetskonsentrasjon                       None        U/L  Medisinsk biokjemi                None  Enzymer, metabolitter, vevsskade

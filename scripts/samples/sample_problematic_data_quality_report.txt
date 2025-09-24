@@ -1,0 +1,109 @@
+================================================================================
+CSV DATA QUALITY VALIDATION REPORT
+================================================================================
+File: samples/sample_problematic_data.csv
+Generated: 2025-09-24 13:39:11
+Encoding: utf-8
+
+OVERVIEW
+----------------------------------------
+Total Rows: 11
+Total Columns: 7
+Total Issues Found: 18
+
+ISSUE SUMMARY
+----------------------------------------
+Duplicate Keys: 3
+Empty Columns: 1
+Empty Rows: 2
+Exact Duplicates: 1
+Inconsistent Capitalization: 2
+Potential Numeric Column: 14
+Potential Typos: 2
+Unnamed Column: 1
+Whitespace Leading Trailing: 5
+Whitespace Multiple Spaces: 4
+Whitespace Newlines: 1
+Whitespace Tabs: 1
+
+WARNING ISSUES
+----------------------------------------
+• Found 1 exact duplicate rows
+  Location: Rows: [10]
+  Suggested Fix: Remove duplicate rows
+
+• Found 3 duplicate values in key column 'ID'
+  Location: Rows: [4, 9, 10]
+  Suggested Fix: Review and consolidate records with duplicate ID values
+
+• Found 2 completely empty rows
+  Location: Rows: [9, 10]
+  Suggested Fix: Remove empty rows
+
+• Found 1 values with leading trailing in column 'ID'
+  Location: Column: ID, Rows: [6]
+  Suggested Fix: Clean leading trailing whitespace
+
+• Found 1 values with multiple spaces in column 'ID'
+  Location: Column: ID, Rows: [6]
+  Suggested Fix: Clean multiple spaces whitespace
+
+• Found 3 values with leading trailing in column 'Name'
+  Location: Column: Name, Rows: [5, 6, 8]
+  Suggested Fix: Clean leading trailing whitespace
+
+• Found 2 values with multiple spaces in column 'Name'
+  Location: Column: Name, Rows: [3, 6]
+  Suggested Fix: Clean multiple spaces whitespace
+
+• Found 1 values with leading trailing in column 'Notes'
+  Location: Column: Notes, Rows: [6]
+  Suggested Fix: Clean leading trailing whitespace
+
+• Found 1 values with multiple spaces in column 'Notes'
+  Location: Column: Notes, Rows: [6]
+  Suggested Fix: Clean multiple spaces whitespace
+
+• Found unnamed column: Unnamed: 6
+  Location: Column index 6
+  Suggested Fix: Provide meaningful name for column 6
+
+INFO ISSUES
+----------------------------------------
+• Found 1 completely empty columns
+  Location: Columns: ['Unnamed: 6']
+  Suggested Fix: Consider removing empty columns
+
+• Found 1 values with tabs in column 'Name'
+  Location: Column: Name, Rows: [5]
+  Suggested Fix: Clean tabs whitespace
+
+• Found 1 values with newlines in column 'Name'
+  Location: Column: Name, Rows: [8]
+  Suggested Fix: Clean newlines whitespace
+
+• Column 'ID' contains values that look like numbers but are stored as text
+  Location: Column: ID
+  Suggested Fix: Convert to numeric data type
+
+• Column 'Age' contains values that look like numbers but are stored as text
+  Location: Column: Age
+  Suggested Fix: Convert to numeric data type
+
+• Column 'Name' has 1 values with inconsistent capitalization
+  Location: Column: Name
+  Suggested Fix: Standardize capitalization
+
+• Column 'Name' has potentially similar values that might be typos
+  Location: Column: Name
+  Suggested Fix: Review and standardize similar values
+
+• Column 'Notes' has 1 values with inconsistent capitalization
+  Location: Column: Notes
+  Suggested Fix: Standardize capitalization
+
+RECOMMENDATIONS
+----------------------------------------
+🟡 WARNING: Consider fixing warning issues to improve data quality.
+
+To clean the data automatically, use the --clean option.

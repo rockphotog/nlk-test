@@ -1,0 +1,13 @@
+ID,Name,Email,Age,Date,Notes,Unnamed: 6
+001,John Doe,john@test.com,25,2023-01-15,Good employee,
+002,jane smith,jane.smith@email,30.0,15/01/2023,needs training,
+003,JANE SMITH,invalid-email,thirty,2023/01/15,NEEDS TRAINING,
+004,Bob  Wilson,bob@company.com,45,2023-01-20,experienced worker,
+004,Bob Wilson,bob@company.com,45,2023-01-20,experienced worker,
+005,Alice Brown	,alice@test.com,22,invalid-date,,
+  006  ,  Charlie Davis  ,,35,,   great performance   ,
+,NULL,N/A,,2023-01-25,na,
+007,"Eve White
+",eve@test.com,28,2023-01-30,new hire,
+,,,,,,
+,,,,,,

@@ -1,0 +1,57 @@
+================================================================================
+CSV DATA QUALITY VALIDATION REPORT
+================================================================================
+File: ../nlk-test/resources/csv_output/norsk_laboratoriekodeverk_7280.77-clean_full.csv
+Generated: 2025-09-24 13:36:41
+Encoding: utf-8
+
+OVERVIEW
+----------------------------------------
+Total Rows: 11,395
+Total Columns: 17
+Total Issues Found: 7
+
+ISSUE SUMMARY
+----------------------------------------
+Duplicate Keys: 4
+Inconsistent Capitalization: 112
+Whitespace Multiple Spaces: 2
+Whitespace Non Breaking Space: 2
+
+WARNING ISSUES
+----------------------------------------
+• Found 4 duplicate values in key column 'kode'
+  Location: Rows: [11148, 11314, 11351, 11361]
+  Suggested Fix: Review and consolidate records with duplicate kode values
+
+• Found 2 values with multiple spaces in column 'kodedefinisjon'
+  Location: Column: kodedefinisjon, Rows: [1644, 1645]
+  Suggested Fix: Clean multiple spaces whitespace
+
+INFO ISSUES
+----------------------------------------
+• Found 2 values with non breaking space in column 'norsk_bruksnavn'
+  Location: Column: norsk_bruksnavn, Rows: [11167, 11169]
+  Suggested Fix: Clean non breaking space whitespace
+
+• Column 'norsk_bruksnavn' has 60 values with inconsistent capitalization
+  Location: Column: norsk_bruksnavn
+  Suggested Fix: Standardize capitalization
+
+• Column 'kodedefinisjon' has 36 values with inconsistent capitalization
+  Location: Column: kodedefinisjon
+  Suggested Fix: Standardize capitalization
+
+• Column 'komponent' has 15 values with inconsistent capitalization
+  Location: Column: komponent
+  Suggested Fix: Standardize capitalization
+
+• Column 'system' has 1 values with inconsistent capitalization
+  Location: Column: system
+  Suggested Fix: Standardize capitalization
+
+RECOMMENDATIONS
+----------------------------------------
+🟡 WARNING: Consider fixing warning issues to improve data quality.
+
+To clean the data automatically, use the --clean option.

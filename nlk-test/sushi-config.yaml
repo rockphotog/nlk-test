@@ -42,10 +42,7 @@ resources:
   CodeSystem/norsk-laboratoriekodeverk:
     name: Norwegian Laboratory Codebook
     description: Complete Norwegian laboratory terminology with 11,391 codes
-    
-# Global settings
-global:
-  # Add any global settings here if needed
+
 
 # Navigation menu for the Implementation Guide
 menu:

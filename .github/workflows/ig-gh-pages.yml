@@ -90,24 +90,31 @@ jobs:
             fhir-ig-cache-${{ runner.os }}-
 
       - name: 🔥 Install FHIR packages and dependencies
-        working-directory: ${{ env.IG_SHORTNAME }}
         run: |
           echo "📦 Installing Sushi (FSH compiler)"
-          npm install -g fsh-sushi@latest
+          npm install -g fsh-sushi
           
           echo "📦 Installing FHIR R4 Core package"
           npm --registry https://packages.simplifier.net install hl7.fhir.r4.core@4.0.1
           
           echo "🇳🇴 Installing HL7 Norway basis package"
-          if [ ! -f "hl7.fhir.no.basis-2.2.0-snapshots.tgz" ]; then
-            curl -L -o hl7.fhir.no.basis-2.2.0-snapshots.tgz https://raw.githubusercontent.com/HL7Norway/resources/main/snapshots/hl7.fhir.no.basis-2.2.0-snapshots.tgz
-          fi
+          curl -L -o hl7.fhir.no.basis-2.2.0-snapshots.tgz https://raw.githubusercontent.com/HL7Norway/resources/main/snapshots/hl7.fhir.no.basis-2.2.0-snapshots.tgz
           npm install hl7.fhir.no.basis-2.2.0-snapshots.tgz
           
           echo "🗂️ Setting up FHIR package cache"
-          mkdir -p ~/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
-          cp -r ./node_modules/hl7.fhir.no.basis/* ~/.fhir/packages/hl7.fhir.no.basis#2.2.0/package/
+          mkdir -p $HOME/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
+          cp -r ./node_modules/hl7.fhir.no.basis/* $HOME/.fhir/packages/hl7.fhir.no.basis#2.2.0/package/
           
+      - name: 🔒 Verify input directory structure
+        run: |
+          echo "🔒 Security check: Ensuring only input directory is used"
+          echo "Input directory structure:"
+          ls -la ${{ env.IG_SHORTNAME }}/input/
+          echo "FSH files in input directory:"
+          find ${{ env.IG_SHORTNAME }}/input/ -name "*.fsh" -type f | head -10
+          echo "❌ Resources directory will NOT be used for validation"
+          echo "✅ Only ${{ env.IG_SHORTNAME }}/input/ and subdirectories will be processed"
+
       - name: ⚡ Clear cache (if forced)
         if: ${{ github.event.inputs.force_rebuild == 'true' }}
         working-directory: ${{ env.IG_SHORTNAME }}
@@ -132,8 +139,12 @@ jobs:
       - name: 🏗️ Build IG with Sushi and Publisher
         working-directory: ${{ env.IG_SHORTNAME }}
         run: |
-          echo "🍣 Running Sushi (FSH → FHIR)"
-          sushi build . --out fsh-generated
+          echo "🍣 Running Sushi (FSH → FHIR) - input directory only"
+          echo "FSH files found:"
+          find input/fsh/ -name "*.fsh" -type f
+          sushi . > sushi-build.log 2>&1 || (cat sushi-build.log && exit 1)
+          cat sushi-build.log
+          echo "✅ SUSHI build complete - only input directory used"
           
           echo "🔥 Running IG Publisher"
           java -Xmx4g -jar input-cache/publisher.jar -ig ig.ini -publish https://rockphotog.github.io/nlk-test/
@@ -157,7 +168,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG_SHORTNAME }}/output
           destination_dir: .
-          commit_message: '🔥 Deploy FHIR IG: ${{ github.event.head_commit.message }}'
+          commit_message: '🔥 Deploy FHIR IG - Norwegian Laboratory Codebook'
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           

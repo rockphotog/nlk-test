@@ -1,3 +1,0 @@
-Output File                                         Name                              Type        FSH File                                      Lines
-CodeSystem-norsk-laboratoriekodeverk-detailed.json  NorskLaboratoriekodeverkDetailed  CodeSystem  codesystems/nlk-test.codesystem-detailed.fsh  8 - 213784
-CodeSystem-norsk-laboratoriekodeverk.json           NorskLaboratoriekodeverk          CodeSystem  codesystems/nlk-test.codesystem.fsh           7 - 11475

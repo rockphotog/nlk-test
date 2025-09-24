@@ -10,7 +10,7 @@ Title: "Norsk Laboratoriekodeverk"
 Description: "Norwegian Laboratory Codebook - a comprehensive terminology for laboratory medicine in Norway"
 * ^url = "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk"
 * ^version = "7280.77"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * ^date = "2025-09-24"
 * ^publisher = "Espen"

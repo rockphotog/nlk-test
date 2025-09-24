@@ -60,6 +60,16 @@ jobs:
         echo "NPM cache size: $(du -sh ~/.npm 2>/dev/null || echo '0B (not found)')"
         echo "FHIR cache size: $(du -sh ~/.fhir 2>/dev/null || echo '0B (not found)')"
 
+    - name: Verify input directory structure
+      run: |
+        echo "🔒 Security check: Ensuring only input directory is used"
+        echo "Input directory structure:"
+        ls -la ${{ env.IG_SHORTNAME }}/input/
+        echo "FSH files in input directory:"
+        find ${{ env.IG_SHORTNAME }}/input/ -name "*.fsh" -type f | head -10
+        echo "❌ Resources directory will NOT be used for validation"
+        echo "✅ Only ${{ env.IG_SHORTNAME }}/input/ and subdirectories will be processed"
+
     - name: Install fsh-sushi
       run: npm install -g fsh-sushi
 
@@ -79,13 +89,18 @@ jobs:
     - name: Install fsh-validator
       run: pip install -U git+https://github.com/glichtner/fsh-validator
 
-    - name: Run fsh-validator
+    - name: Validate FSH files in input directory only
       run: |
+        echo "🔍 Validating FSH files in input directory only..."
+        echo "Working directory: ${{ env.IG_SHORTNAME }}/input/"
+        echo "FSH files found:"
+        find ${{ env.IG_SHORTNAME }}/input/fsh/ -name "*.fsh" -type f
         cd ${{ env.IG_SHORTNAME }}/input/fsh/
         fsh-validator --all --log-path fsh-validator.log
+        echo "✅ Validation complete - only input directory used"
 
-    - name: Upload output file
+    - name: Upload validation log
       uses: actions/upload-artifact@v4
       with:
-        name: fsh-validator.log
+        name: fsh-validator-log
         path: ${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log

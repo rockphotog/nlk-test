@@ -12,7 +12,7 @@ The main purpose of this implementation guide is to publish an experimental FHIR
 
 ### 🧬 CodeSystem: Norsk Laboratoriekodeverk
 
-- **Complete terminology**: 11,395 laboratory codes covering all aspects of Norwegian laboratory medicine
+- **Complete terminology**: 11,391 laboratory codes covering all aspects of Norwegian laboratory medicine
 - **Current active codes**: 9,679 actively used codes
 - **Version**: 7280.77 (derived from the source Excel file)
 - **Coverage**: Six major medical domains:
@@ -23,26 +23,24 @@ The main purpose of this implementation guide is to publish an experimental FHIR
   - Medisinsk genetikk (Medical Genetics) - 67 codes
   - Patologi (Pathology) - 27 codes
 
-### 📋 Rich Metadata
+### 📋 CodeSystem Features
 
-Each code includes comprehensive metadata:
-
-- **Valid from/to dates**: Lifecycle management
-- **Code definitions**: Technical NPU-style definitions
-- **Components**: What is being measured
-- **Systems**: Specimen/system types (Blood, Urine, etc.)
-- **Properties**: Type of measurement (concentration, activity, etc.)
-- **Units**: Measurement units
-- **Groupings**: Clinical categorization
-- **Replacement codes**: Version management
+- **FHIR R4 Compliant**: Full compliance with FHIR CodeSystem specifications
+- **Unique Codes**: 11,391 deduplicated laboratory codes (4 duplicates removed from source)
+- **Active Status Tracking**: 9,679 currently active codes vs. 1,712 historical codes
+- **Norwegian Terminology**: Complete coverage of Norwegian laboratory medicine
+- **Standardized Format**: Clean FSH syntax for reliable compilation
+- **Version Controlled**: Traceable to source Excel version 7280.77
 
 ### 🔧 Technical Implementation
 
 - **Source**: Generated from `Norsk Laboratoriekodeverk 7280.77.xlsx`
-- **Format**: FHIR Shorthand (FSH)
+- **Format**: FHIR Shorthand (FSH) - R4 compliant syntax
 - **Build tool**: SUSHI + HL7 FHIR IG Publisher
 - **FHIR Version**: 4.0.1
 - **Dependencies**: hl7.fhir.no.basis 2.2.0
+- **Validation**: FSH syntax errors resolved, duplicates removed
+- **Quality**: Clean, validated codebase ready for compilation
 
 ## Repository Structure
 
@@ -50,9 +48,12 @@ Each code includes comprehensive metadata:
 📁 nlk-test/                    # Main IG directory
 ├── 📄 ig.ini                   # IG Publisher configuration
 ├── 📄 sushi-config.yaml        # SUSHI configuration
-├── 📄 nlk-test.codesystem.fsh  # Main CodeSystem definition (224k+ lines)
 └── 📁 input/                   # IG input files
     ├── 📁 fsh/                  # FSH source files
+    │   ├── � codesystems/     # CodeSystem definitions
+    │   │   └── �📄 nlk-test.codesystem.fsh  # Main NLK CodeSystem (11.4k lines)
+    │   ├── 📁 profiles/        # Profile definitions
+    │   └── � aliases.fsh      # Common aliases
     ├── 📁 images/              # Documentation images
     └── 📁 pagecontent/         # Narrative content
 
@@ -124,4 +125,5 @@ See [LICENSE](LICENSE) file for details.
 
 ---
 
-**Source Data**: Generated from Norsk Laboratoriekodeverk 7280.77.xlsx on 2025-09-24
+**Source Data**: Generated from Norsk Laboratoriekodeverk 7280.77.xlsx on 2025-09-24  
+**Last Updated**: Fixed FSH validation issues and removed duplicate codes

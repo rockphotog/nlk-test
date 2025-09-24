@@ -39,3 +39,6 @@ $RECYCLE.BIN/
 
 # Windows - Windows Installer files
 *.lnk
+
+# Java
+*.jar

@@ -1,0 +1,19 @@
+id: nlk-test-validation
+canonical: http://hl7.no/fhir/ig/nlk-test-validation
+name: NLKValidationTest
+title: Norwegian Laboratory Codebook Validation Test
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2025+
+releaseLabel: ci-build
+publisher:
+  name: Espen
+  url: https://github.com/rockphotog/nlk-test
+
+dependencies:
+  hl7.fhir.r4.core: 4.0.1
+
+pages:
+  index.md:
+    title: Home

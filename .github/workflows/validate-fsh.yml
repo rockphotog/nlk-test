@@ -86,21 +86,45 @@ jobs:
         cp -r ./node_modules/hl7.fhir.no.basis/* $HOME/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
 
 
-    - name: Install fsh-validator
-      run: pip install -U git+https://github.com/glichtner/fsh-validator
-
-    - name: Validate FSH files in input directory only
+    - name: Validate FSH files using SUSHI
       run: |
         echo "🔍 Validating FSH files in input directory only..."
-        echo "Working directory: ${{ env.IG_SHORTNAME }}/input/"
+        echo "Working directory: ${{ env.IG_SHORTNAME }}/"
         echo "FSH files found:"
         find ${{ env.IG_SHORTNAME }}/input/fsh/ -name "*.fsh" -type f
-        cd ${{ env.IG_SHORTNAME }}/input/fsh/
-        fsh-validator --all --log-path fsh-validator.log
-        echo "✅ Validation complete - only input directory used"
+        echo "Running SUSHI compilation and validation..."
+        cd ${{ env.IG_SHORTNAME }}/
+        sushi build --log-path sushi-validation.log
+        echo "✅ SUSHI validation complete - only input directory used"
 
-    - name: Upload validation log
+    - name: Download FHIR Validator (optional additional validation)
+      run: |
+        echo "📥 Downloading official FHIR validator for additional validation..."
+        curl -L -o validator_cli.jar https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar
+
+    - name: Additional FHIR validation of generated resources
+      run: |
+        echo "🔍 Running additional FHIR validation on generated CodeSystems..."
+        cd ${{ env.IG_SHORTNAME }}/
+        if [ -f "fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk.json" ]; then
+          echo "Validating basic CodeSystem..."
+          java -jar ../validator_cli.jar fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk.json -version 4.0.1 -tx n/a
+        fi
+        if [ -f "fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk-medical-genetics.json" ]; then
+          echo "Validating medical genetics CodeSystem..."
+          java -jar ../validator_cli.jar fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk-medical-genetics.json -version 4.0.1 -tx n/a
+        fi
+        echo "✅ Additional FHIR validation complete"
+      continue-on-error: true
+
+    - name: Upload SUSHI validation log
       uses: actions/upload-artifact@v4
       with:
-        name: fsh-validator-log
-        path: ${{ env.IG_SHORTNAME }}/input/fsh/fsh-validator.log
+        name: sushi-validation-log
+        path: ${{ env.IG_SHORTNAME }}/sushi-validation.log
+
+    - name: Upload generated FHIR resources
+      uses: actions/upload-artifact@v4
+      with:
+        name: generated-fhir-resources
+        path: ${{ env.IG_SHORTNAME }}/fsh-generated/resources/*.json

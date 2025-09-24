@@ -25,14 +25,6 @@ contact:
     telecom:
       - system: url
         value: https://github.com/rockphotog/
-dependencies:
-  hl7.fhir.no.basis: 2.2.0
-
-# Additional configuration for better IG generation
-parameters:
-  show-inherited-invariants: false
-  usage-stats-opt-out: false
-  logging: progress
 
 # Resource configuration
 resources:

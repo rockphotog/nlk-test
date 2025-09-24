@@ -55,19 +55,35 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: 'npm'
-          cache-dependency-path: '${{ env.IG_SHORTNAME }}/package*.json'
+          
+      - name: 📋 Initialize npm workspace
+        working-directory: ${{ env.IG_SHORTNAME }}
+        run: |
+          if [ ! -f "package.json" ]; then
+            echo "📦 Creating package.json for dependency management"
+            cat > package.json << 'EOF'
+          {
+            "name": "nlk-test-ig",
+            "version": "1.0.0",
+            "description": "Norwegian Laboratory Codebook FHIR IG",
+            "private": true,
+            "dependencies": {}
+          }
+          EOF
+          fi
 
-      - name: 📦 Cache FHIR packages
+      - name: 📦 Cache FHIR packages and npm
         uses: actions/cache@v4
         with:
           path: |
             ~/.fhir/packages
+            ~/.npm
             ${{ env.IG_SHORTNAME }}/input-cache
             ${{ env.IG_SHORTNAME }}/fsh-generated
-          key: fhir-packages-${{ runner.os }}-${{ hashFiles('**/sushi-config.yaml', '**/package.json') }}
+            ${{ env.IG_SHORTNAME }}/node_modules
+          key: fhir-ig-cache-${{ runner.os }}-${{ hashFiles('**/sushi-config.yaml', '**/package.json', '**/package-lock.json') }}
           restore-keys: |
-            fhir-packages-${{ runner.os }}-
+            fhir-ig-cache-${{ runner.os }}-
 
       - name: 🔥 Install FHIR packages and dependencies
         working-directory: ${{ env.IG_SHORTNAME }}

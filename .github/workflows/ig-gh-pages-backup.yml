@@ -1,8 +1,27 @@
 name: Build and Deploy FHIR IG to GitHub Pages
-
-on:
-  push:
-    branches: [main]
+      - name: ☕ Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: ${{ env.JAVA_VERSION }}
+          
+      - name: 💎 Setup Ruby and Jekyll
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+          
+      - name: 🌐 Install Jekyll
+        run: |
+          echo "💎 Installing Jekyll and dependencies"
+          gem install jekyll bundler
+          jekyll --version
+          echo "✅ Jekyll installed successfully"
+          
+      - name: 🖥️ Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }} branches: [main]
     paths:
       - 'nlk-test/**'
       - '.github/workflows/ig-gh-pages.yml'
@@ -51,20 +70,13 @@ jobs:
           distribution: 'temurin'
           java-version: ${{ env.JAVA_VERSION }}
           
-      - name: 💎 Setup Ruby and Jekyll
+      - name: � Setup Ruby and Jekyll
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
           bundler-cache: true
           
-      - name: 🌐 Install Jekyll
-        run: |
-          echo "💎 Installing Jekyll and dependencies"
-          gem install jekyll bundler
-          jekyll --version
-          echo "✅ Jekyll installed successfully"
-          
-      - name: 🖥️ Setup Node.js
+      - name: �🖥️ Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
@@ -116,7 +128,7 @@ jobs:
           echo "🗂️ Setting up FHIR package cache"
           mkdir -p ~/.fhir/packages/hl7.fhir.no.basis#2.2.0/package
           cp -r ./node_modules/hl7.fhir.no.basis/* ~/.fhir/packages/hl7.fhir.no.basis#2.2.0/package/
-          
+
       - name: ⚡ Clear cache (if forced)
         if: ${{ github.event.inputs.force_rebuild == 'true' }}
         working-directory: ${{ env.IG_SHORTNAME }}
@@ -158,15 +170,15 @@ jobs:
             echo "❌ Output directory not found"
             exit 1
           fi
-
-      - name: 🚀 Deploy to GitHub Pages
+          
+      - name: � Deploy to GitHub Pages
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG_SHORTNAME }}/output
           destination_dir: .
-          commit_message: '🔥 Deploy FHIR IG: ${{ github.event.head_commit.message }}'
+          commit_message: '� Deploy FHIR IG: ${{ github.event.head_commit.message }}'
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           

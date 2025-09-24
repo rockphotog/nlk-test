@@ -8,7 +8,7 @@
 CodeSystem: NorskLaboratoriekodeverkMedicalGenetics
 Id: norsk-laboratoriekodeverk-medical-genetics
 Title: "Norsk Laboratoriekodeverk - Medical Genetics"
-Description: "Norwegian Laboratory Codebook - Medical Genetics domain subset with complete metadata properties"
+Description: "Norwegian Laboratory Codebook - Medical Genetics domain subset with complete metadata properties. Made as an example for NLK with detailed properties for each code."
 * ^url = "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk-medical-genetics"
 * ^version = "7280.77"
 * ^status = #draft

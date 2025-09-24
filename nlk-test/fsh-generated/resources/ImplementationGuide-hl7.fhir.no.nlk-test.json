@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.no.nlk-test",
   "url": "http://hl7.no/fhir/ig/nlk-test",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "NlkTest",
   "title": "Norwegian Laboratory Codebook (NLK) - FHIR Implementation Guide",
   "status": "draft",
@@ -42,7 +42,6 @@
     }
   ],
   "packageId": "hl7.fhir.no.nlk-test",
-  "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
   ],

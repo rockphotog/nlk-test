@@ -30,6 +30,9 @@ resources:
   CodeSystem/norsk-laboratoriekodeverk:
     name: Norwegian Laboratory Codebook (Basic)
     description: Basic Norwegian laboratory terminology
+  CodeSystem/norsk-laboratoriekodeverk-medical-genetics:
+    name: Norwegian Laboratory Codebook (Medical Genetics)
+    description: Norwegian laboratory terminology focused on Medical Genetics domain with detailed metadata properties for 103 codes
 #  CodeSystem/norsk-laboratoriekodeverk-detailed:
 #    name: Norwegian Laboratory Codebook (Detailed)
 #    description: Complete Norwegian laboratory terminology with detailed metadata properties for all 19,476 codes
@@ -42,4 +45,5 @@ menu:
   Architecture: architecture.html
   CodeSystems:
     Basic CodeSystem: CodeSystem-norsk-laboratoriekodeverk.html
+    Medical Genetics CodeSystem: CodeSystem-norsk-laboratoriekodeverk-medical-genetics.html
 #    Detailed CodeSystem: CodeSystem-norsk-laboratoriekodeverk-detailed.html

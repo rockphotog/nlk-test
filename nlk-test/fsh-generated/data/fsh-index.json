@@ -1,0 +1,18 @@
+[
+  {
+    "outputFile": "CodeSystem-norsk-laboratoriekodeverk-detailed.json",
+    "fshName": "NorskLaboratoriekodeverkDetailed",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/nlk-test.codesystem-detailed.fsh",
+    "startLine": 8,
+    "endLine": 213784
+  },
+  {
+    "outputFile": "CodeSystem-norsk-laboratoriekodeverk.json",
+    "fshName": "NorskLaboratoriekodeverk",
+    "fshType": "CodeSystem",
+    "fshFile": "codesystems/nlk-test.codesystem.fsh",
+    "startLine": 7,
+    "endLine": 11475
+  }
+]

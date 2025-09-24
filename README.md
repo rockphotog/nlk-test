@@ -44,6 +44,15 @@ The main purpose of this implementation guide is to publish an experimental FHIR
 - **Validation**: FSH syntax errors resolved, duplicates removed
 - **Quality**: Clean, validated codebase ready for compilation
 
+### 📋 Available Versions
+
+- **Published IG**: Basic CodeSystem included in the published Implementation Guide
+- **Detailed CodeSystem** ⭐: Complete version with full metadata properties available at [`NLK-CodeSystem-Detailed.json`](NLK-CodeSystem-Detailed.json) (11MB)
+  - Contains all 19,476+ concepts with comprehensive metadata
+  - Includes detailed properties: validFrom/validTo dates, component names, system specifications, units, domains, groupings
+  - Generated from the detailed FSH file but not included in published IG due to size
+  - Ready for direct import into FHIR terminology servers
+
 ## Repository Structure
 
 ```text

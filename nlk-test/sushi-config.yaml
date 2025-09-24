@@ -9,7 +9,7 @@ name: NlkTest
 title: "Norwegian Laboratory Codebook (NLK) - FHIR Implementation Guide"
 description: "FHIR Implementation Guide for the Norwegian Laboratory Codebook (Norsk Laboratoriekodeverk). This IG provides a comprehensive CodeSystem with 11,391 laboratory codes covering all aspects of Norwegian laboratory medicine across six major medical domains."
 status: draft
-version: 0.2.1
+version: 0.2.2
 fhirVersion: 4.0.1
 copyrightYear: 2025+
 releaseLabel: ci-build
@@ -33,5 +33,5 @@ menu:
   Architecture: architecture.html
   CodeSystems:
     Basic CodeSystem: CodeSystem-norsk-laboratoriekodeverk.html
-#    Medical Genetics CodeSystem: CodeSystem-norsk-laboratoriekodeverk-medical-genetics.html
+    Medical Genetics CodeSystem: CodeSystem-norsk-laboratoriekodeverk-medical-genetics.html
 #    Detailed CodeSystem: CodeSystem-norsk-laboratoriekodeverk-detailed.html

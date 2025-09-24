@@ -1,1 +1,0 @@
-[NorskLaboratoriekodeverkDetailed]: CodeSystem-norsk-laboratoriekodeverk-detailed.html

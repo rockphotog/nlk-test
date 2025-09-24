@@ -1,2 +1,0 @@
-Output File                                         Name                              Type        FSH File              Lines
-CodeSystem-norsk-laboratoriekodeverk-detailed.json  NorskLaboratoriekodeverkDetailed  CodeSystem  corrected-sample.fsh  5 - 99

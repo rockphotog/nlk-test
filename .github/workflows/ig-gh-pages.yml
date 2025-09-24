@@ -29,6 +29,8 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
     
     steps:
       - name: 📥 Checkout repository
@@ -162,18 +164,18 @@ jobs:
           fi
 
       - name: 🚀 Deploy to GitHub Pages
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        id: deployment
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.IG_SHORTNAME }}/output
+          publish_branch: gh-pages
           destination_dir: .
           commit_message: '🔥 Deploy FHIR IG - Norwegian Laboratory Codebook'
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
           
       - name: 📋 Deployment summary
-        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           echo "🎉 Successfully deployed FHIR IG to GitHub Pages"
           echo "🔗 URL: https://rockphotog.github.io/nlk-test/"

@@ -30,9 +30,9 @@ resources:
   CodeSystem/norsk-laboratoriekodeverk:
     name: Norwegian Laboratory Codebook (Basic)
     description: Basic Norwegian laboratory terminology
-  CodeSystem/norsk-laboratoriekodeverk-detailed:
-    name: Norwegian Laboratory Codebook (Detailed)
-    description: Complete Norwegian laboratory terminology with detailed metadata properties for all 19,476 codes
+#  CodeSystem/norsk-laboratoriekodeverk-detailed:
+#    name: Norwegian Laboratory Codebook (Detailed)
+#    description: Complete Norwegian laboratory terminology with detailed metadata properties for all 19,476 codes
 
 
 # Navigation menu for the Implementation Guide
@@ -42,4 +42,4 @@ menu:
   Architecture: architecture.html
   CodeSystems:
     Basic CodeSystem: CodeSystem-norsk-laboratoriekodeverk.html
-    Detailed CodeSystem: CodeSystem-norsk-laboratoriekodeverk-detailed.html
+#    Detailed CodeSystem: CodeSystem-norsk-laboratoriekodeverk-detailed.html

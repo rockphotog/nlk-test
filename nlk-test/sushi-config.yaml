@@ -36,11 +36,7 @@ resources:
 # Navigation menu for the Implementation Guide
 menu:
   Home: index.html
-  Background:
-    About NLK: background.html
-    Implementation Notes: implementation.html
   Artifacts: artifacts.html
+  Architecture: architecture.html
   CodeSystem:
     Norwegian Laboratory Codebook: CodeSystem-norsk-laboratoriekodeverk.html
-  Downloads: downloads.html
-  History: http://hl7.no/fhir/ig/nlk-test/history.html

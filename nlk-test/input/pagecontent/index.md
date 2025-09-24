@@ -20,6 +20,8 @@ The following diagram illustrates the core structure of the Norwegian Laboratory
 
 *Figure 1: Norwegian Laboratory Codebook CodeSystem structure showing the relationship between FHIR base classes, medical domains, and laboratory concepts.*
 
+For a comprehensive technical view including all FHIR integration patterns and Norwegian healthcare context, see the [Technical Architecture](architecture.html) page.
+
 ## Key Features
 
 ### 🧬 Comprehensive Coverage
@@ -86,9 +88,10 @@ Support healthcare research and quality improvement by:
 ## Getting Started
 
 1. **Browse the CodeSystem**: Explore the [Norwegian Laboratory Codebook CodeSystem](CodeSystem-norsk-laboratoriekodeverk.html)
-2. **View all artifacts**: See the complete [Artifacts](artifacts.html) list
-3. **Implementation guidance**: Read the [Implementation Notes](implementation.html)
-4. **Download resources**: Access FHIR resources in the [Downloads](downloads.html) section
+2. **Technical Architecture**: View the detailed [Technical Architecture](architecture.html) with complete system diagrams
+3. **View all artifacts**: See the complete [Artifacts](artifacts.html) list
+4. **Implementation guidance**: Read the [Implementation Notes](implementation.html)
+5. **Download resources**: Access FHIR resources in the [Downloads](downloads.html) section
 
 ## Status
 

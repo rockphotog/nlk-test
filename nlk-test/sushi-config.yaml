@@ -2,29 +2,68 @@
 # │  The properties below are used to create the ImplementationGuide resource. For a list of       │
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
-# Oppdater med riktig informasjon
-id: hl7.fhir.no.mal
-canonical: http://hl7.no/fhir/ig/mal
-name: Mal
-title: "Mal"
-description: Implementasjonsguide for å TODO
+id: hl7.fhir.no.nlk-test
+canonical: http://hl7.no/fhir/ig/nlk-test
+url: http://hl7.no/fhir/ig/nlk-test
+name: NlkTest
+title: "Norwegian Laboratory Codebook (NLK) - FHIR Implementation Guide"
+description: "FHIR Implementation Guide for the Norwegian Laboratory Codebook (Norsk Laboratoriekodeverk). This IG provides a comprehensive CodeSystem with 11,391 laboratory codes covering all aspects of Norwegian laboratory medicine across six major medical domains."
 status: draft
 version: 0.1.0
 fhirVersion: 4.0.1
 copyrightYear: 2025+
 releaseLabel: ci-build
+experimental: true
+date: 2025-09-24
+license: CC0-1.0
 jurisdiction: urn:iso:std:iso:3166#NO "Norway"
-# Oppdater navn og URL til din organisasjon
 publisher:
-  name: HL7 Norge
-  url: https://www.hl7.no
+  name: Espen
+  url: https://github.com/rockphotog/
+contact:
+  - name: Espen
+    telecom:
+      - system: url
+        value: https://github.com/rockphotog/
+author:
+  - name: Espen
+keywords:
+  - Norwegian
+  - Laboratory
+  - Terminology
+  - CodeSystem
+  - NLK
+  - Laboratoriekodeverk
 dependencies:
   hl7.fhir.no.basis: 2.2.0
 
-# ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
-# │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
-# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# Additional configuration for better IG generation
+parameters:
+  show-inherited-invariants: false
+  usage-stats-opt-out: false
+  logging: progress
+  
+# Template and pages configuration  
+template: hl7.fhir.template#current
+
+# Resource configuration
+resources:
+  CodeSystem/norsk-laboratoriekodeverk:
+    name: Norwegian Laboratory Codebook
+    description: Complete Norwegian laboratory terminology with 11,391 codes
+    
+# Global settings
+global:
+  # Add any global settings here if needed
+
+# Navigation menu for the Implementation Guide
 menu:
   Home: index.html
+  Background:
+    About NLK: background.html
+    Implementation Notes: implementation.html
   Artifacts: artifacts.html
-  TOC: toc.html
+  CodeSystem:
+    Norwegian Laboratory Codebook: CodeSystem-norsk-laboratoriekodeverk.html
+  Downloads: downloads.html
+  History: http://hl7.no/fhir/ig/nlk-test/history.html

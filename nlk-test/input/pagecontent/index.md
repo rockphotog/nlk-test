@@ -1,35 +1,92 @@
-### Tittel
+# Norwegian Laboratory Codebook (NLK) - FHIR Implementation Guide
 
-Introduksjonstekst (husk at dette er en mal, og ALL tekst må endres - dette er kun et eksempel)
+Welcome to the FHIR Implementation Guide for the **Norsk Laboratoriekodeverk (NLK)** - Norway's comprehensive laboratory terminology standard.
 
-### Mål
+## Purpose
 
-Målet med denne implementasjonsguiden er å gi en standardisert måte å representere og utveksle helsedata på ved hjelp av HL7 FHIR. Guiden beskriver hvordan ulike FHIR-profiler og ressurser kan brukes for å oppnå interoperabilitet mellom helsesystemer.
+This Implementation Guide publishes the Norwegian Laboratory Codebook as a standardized FHIR R4 CodeSystem, enabling Norwegian healthcare systems to use consistent, interoperable laboratory terminology across different platforms and vendors.
 
-### Omfang
+The NLK CodeSystem provides a complete, authoritative terminology for laboratory medicine in Norway, covering all major medical domains with **11,391 unique laboratory codes**.
 
-Denne implementasjonsguiden dekker følgende områder:
+## Key Features
 
-- Pasientadministrasjon
-- Kliniske observasjoner
-- Medisinsk historikk
-- Behandlingsplaner
-- Laboratorieresultater
+### 🧬 Comprehensive Coverage
 
-### Brukstilfeller
+- **Complete terminology**: All Norwegian laboratory codes in one standardized format
+- **Cross-domain**: Covers six major medical specialties
+- **Version controlled**: Traceable to official NLK version 7280.77
+- **Quality assured**: Deduplicated and validated for FHIR compliance
 
-#### Pasientregistrering
+### 📊 Medical Domains Covered
 
-Denne guiden beskriver hvordan pasienter kan registreres i et helsesystem ved hjelp av FHIR `Patient`-ressursen. Eksempler inkluderer opprettelse, oppdatering og sletting av pasientdata.
+- **Medisinsk biokjemi** (Medical Biochemistry) - 2,881 codes
+- **Immunologi og transfusjonsmedisin** (Immunology & Transfusion Medicine) - 3,231 codes
+- **Medisinsk mikrobiologi** (Medical Microbiology) - 2,547 codes
+- **Klinisk farmakologi** (Clinical Pharmacology) - 2,642 codes
+- **Medisinsk genetikk** (Medical Genetics) - 67 codes
+- **Patologi** (Pathology) - 27 codes
 
-#### Kliniske observasjoner
+### 🔧 Technical Standards
 
-Guiden viser hvordan kliniske observasjoner som blodtrykk, puls og temperatur kan representeres ved hjelp av FHIR `Observation`-ressursen.
+- **FHIR R4 compliant**: Full compliance with HL7 FHIR Release 4
+- **Norwegian context**: Built on hl7.fhir.no.basis foundation
+- **Active maintenance**: 9,679 currently active codes, 1,712 historical codes
+- **Standardized format**: Clean FSH implementation for reliable integration
 
-### Figur
+## Primary Use Cases
 
-Eksempel på en figur laget med PlantUML.
+### Laboratory Information Systems (LIS) Integration
 
-<img src="test.svg" width="40%" />
+Enable Norwegian laboratory systems to:
 
+- **Standardize code usage** across different LIS vendors
+- **Ensure consistent terminology** in laboratory reports
+- **Support interoperability** between hospital and external lab systems
+- **Facilitate data exchange** with national health registries
 
+### Electronic Health Record (EHR) Systems
+
+Support Norwegian EHR implementations by:
+
+- **Providing standardized lab codes** for observation and diagnostic reporting
+- **Enabling semantic interoperability** between different EHR systems
+- **Supporting clinical decision support** with consistent terminology
+- **Facilitating research and analytics** with standardized data coding
+
+### National Health Data Exchange
+
+Enable Norwegian healthcare data exchange through:
+
+- **Consistent laboratory terminology** across healthcare regions
+- **Support for national reporting** requirements and quality indicators  
+- **Integration with existing** Norwegian health data standards
+- **Compliance with national** interoperability frameworks
+
+### Research and Analytics
+
+Support healthcare research and quality improvement by:
+
+- **Providing standardized datasets** for epidemiological studies
+- **Enabling cross-institutional** laboratory data analysis
+- **Supporting quality metrics** and benchmarking initiatives
+- **Facilitating international** research collaboration with FHIR-compatible data
+
+## Getting Started
+
+1. **Browse the CodeSystem**: Explore the [Norwegian Laboratory Codebook CodeSystem](CodeSystem-norsk-laboratoriekodeverk.html)
+2. **View all artifacts**: See the complete [Artifacts](artifacts.html) list
+3. **Implementation guidance**: Read the [Implementation Notes](implementation.html)
+4. **Download resources**: Access FHIR resources in the [Downloads](downloads.html) section
+
+## Status
+
+🚧 **Experimental Release** - This Implementation Guide is currently in experimental status for evaluation and testing within the Norwegian healthcare ecosystem.
+
+## Contact
+
+For questions about this Implementation Guide or the Norwegian Laboratory Codebook terminology:
+
+- **Publisher**: Espen
+- **Source**: Generated from official Norsk Laboratoriekodeverk 7280.77.xlsx
+- **Repository**: [GitHub - nlk-test](https://github.com/rockphotog/)
+- **Last Updated**: September 24, 2025

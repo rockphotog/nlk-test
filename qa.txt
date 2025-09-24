@@ -3,45 +3,15 @@ NlkTest : Validation Results
 
 err = 0, warn = 6, info = 16
 IG Publisher Version: 2.0.17
-Generated Wed Sep 24 10:49:08 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.nlk-test#0.1.0 (canonical = http://hl7.no/fhir/ig/nlk-test)
- Build Errors : 32 / 5 / 0
+Generated Wed Sep 24 10:51:58 UTC 2025. FHIR version 4.0.1 for hl7.fhir.no.nlk-test#0.1.0 (canonical = http://hl7.no/fhir/ig/nlk-test)
+ Build Errors : 2 / 5 / 0
  /home/runner/work/nlk-test/nlk-test/nlk-test/fsh-generated/resources/CodeSystem-norsk-laboratoriekodeverk : 0 / 1 / 17
  /home/runner/work/nlk-test/nlk-test/nlk-test/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.nlk-test : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
-ERROR: CodeSystem-norsk-laboratoriekodeverk-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 112, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk-testing.html#/html/body/div/div/nav/div/div/ul/li/a at Line 133, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 116, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 119, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.change.history.html#/html/body/div/div/nav/div/div/ul/li/a at Line 137, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 112, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.html#/html/body/div/div/nav/div/div/ul/li/a at Line 133, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.json.html#/html/body/div/div/nav/div/div/ul/li/a at Line 135, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.ttl.html#/html/body/div/div/nav/div/div/ul/li/a at Line 135, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 114, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 117, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: CodeSystem-norsk-laboratoriekodeverk.xml.html#/html/body/div/div/nav/div/div/ul/li/a at Line 135, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: architecture.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 112, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: architecture.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: architecture.html#/html/body/div/div/nav/div/div/ul/li/a at Line 133, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 112, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: artifacts.html#/html/body/div/div/nav/div/div/ul/li/a at Line 133, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 112, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: index.html#/html/body/div/div/nav/div/div/ul/li/a at Line 133, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/ol/li/a at Line 355, column 59: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: index.html#/html/body/div/div/div/div/div/ol/li/a at Line 356, column 74: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 112, column 10: The link 'background.html' for "About NLK" cannot be resolved
-ERROR: toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 115, column 10: The link 'implementation.html' for "Implementation Notes" cannot be resolved
-ERROR: toc.html#/html/body/div/div/nav/div/div/ul/li/a at Line 133, column 6: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ol/li/a at Line 342, column 59: The link 'implementation.html' for "Implementation Notes" cannot be resolved
+ERROR: index.html#/html/body/div/div/div/div/div/ol/li/a at Line 343, column 74: The link 'downloads.html' for "Downloads" cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide

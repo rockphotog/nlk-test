@@ -2,6 +2,8 @@
 
 [![Validate FSH Files](https://github.com/rockphotog/nlk-test/actions/workflows/validate-fsh.yml/badge.svg)](https://github.com/rockphotog/nlk-test/actions/workflows/validate-fsh.yml)[![Build and Deploy FHIR IG to GitHub Pages](https://github.com/rockphotog/nlk-test/actions/workflows/ig-gh-pages.yml/badge.svg)](https://github.com/rockphotog/nlk-test/actions/workflows/ig-gh-pages.yml)
 
+DETTE ER EN TEST - IKKE FOR BRUK OG IMPLEMENTASJON
+
 This repository contains a FHIR Implementation Guide for publishing an experimental version of the **Norsk Laboratoriekodeverk (NLK)** - the Norwegian Laboratory Codebook.
 
 ## Purpose

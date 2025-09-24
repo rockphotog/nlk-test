@@ -1,23 +1,245 @@
-@startuml
+@startuml NLK-CodeSystem-Structure
 
-' Tittel og bunntekst for diagrammet
-title Eksempel-diagram
-footer Undertekst A
+!define LIGHTBLUE #E1F5FE
+!define LIGHTGREEN #E8F5E8
+!define LIGHTYELLOW #FFF9C4
+!define LIGHTPINK #FCE4EC
+!define LIGHTGRAY #F5F5F5
 
-' Klassedefinisjoner med attributter
-class Folk {
-    -Navn : string
-    +Fødselsår : int
+title Norwegian Laboratory Codebook (NLK) - CodeSystem Structure
+
+package "FHIR R4 Base" LIGHTGRAY {
+    abstract class CodeSystem {
+        +url: uri
+        +version: string
+        +status: code
+        +experimental: boolean
+        +date: dateTime
+        +publisher: string
+        +jurisdiction: CodeableConcept
+        +caseSensitive: boolean
+        +content: code
+        +count: unsignedInt
+        +property: Property[]
+        +concept: Concept[]
+    }
+
+    class Property {
+        +code: code
+        +description: string
+        +type: code
+    }
+
+    class Concept {
+        +code: code
+        +display: string
+        +definition: string
+        +property: ConceptProperty[]
+    }
+
+    class ConceptProperty {
+        +code: code
+        +value: Element
+    }
 }
-class Sykkel
-class Tastatur
-class Datamaskin {
-    +Svenskeknapp : boolean
+
+package "Norwegian Laboratory Codebook" LIGHTBLUE {
+    class NorskLaboratoriekodeverk {
+        +id: "norsk-laboratoriekodeverk"
+        +url: "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk"
+        +version: "7280.77"
+        +status: #active
+        +count: 11391
+        +activeCount: 9679
+        +historicalCount: 1712
+        --
+        +getCodesByDomain(domain): Concept[]
+        +getActiveCodes(): Concept[]
+        +getHistoricalCodes(): Concept[]
+        +validateCode(code): boolean
+    }
+
+    class NLKProperty {
+        +validFrom: dateTime
+        +validTo: dateTime
+        +replacedBy: code
+        +changeDate: dateTime
+        +codeDefinition: string
+        +component: string
+        +componentSpec: string
+        +system: string
+        +property: string
+        +method: string
+        +specimen: string
+        +unit: string
+    }
+
+    class NLKConcept {
+        +code: string
+        +display: string
+        +isActive: boolean
+        +domain: MedicalDomain
+        +validFrom: dateTime
+        +validTo: dateTime
+        +component: string
+        +system: string
+        +property: string
+        +method: string
+        +specimen: string
+        +unit: string
+        --
+        +isHistorical(): boolean
+        +getReplacementCode(): string
+        +getDomainInfo(): MedicalDomain
+    }
 }
 
-' Relasjoner mellom klasser
-Folk <-- Datamaskin : bruker
-Folk <-- Sykkel : eier
-Tastatur --o Datamaskin : består av
+package "Medical Domains" LIGHTGREEN {
+    enum MedicalDomain {
+        MEDISINSK_BIOKJEMI
+        IMMUNOLOGI_TRANSFUSJON
+        MEDISINSK_MIKROBIOLOGI
+        KLINISK_FARMAKOLOGI
+        MEDISINSK_GENETIKK
+        PATOLOGI
+        --
+        +getCodeCount(): int
+        +getDisplayName(): string
+        +getDescription(): string
+    }
+
+    class MedisinskBiokjemi {
+        +codeCount: 2881
+        +displayName: "Medisinsk biokjemi"
+        +description: "Medical Biochemistry"
+        --
+        +getClinicalChemistryTests(): NLKConcept[]
+        +getMetabolicMarkers(): NLKConcept[]
+    }
+
+    class ImmunologiTransfusjon {
+        +codeCount: 3231
+        +displayName: "Immunologi og transfusjonsmedisin"
+        +description: "Immunology & Transfusion Medicine"
+        --
+        +getImmunologyTests(): NLKConcept[]
+        +getTransfusionTests(): NLKConcept[]
+    }
+
+    class MedisinskMikrobiologi {
+        +codeCount: 2547
+        +displayName: "Medisinsk mikrobiologi"
+        +description: "Medical Microbiology"
+        --
+        +getBacteriologyTests(): NLKConcept[]
+        +getVirologyTests(): NLKConcept[]
+        +getMycologyTests(): NLKConcept[]
+    }
+
+    class KliniskFarmakologi {
+        +codeCount: 2642
+        +displayName: "Klinisk farmakologi"
+        +description: "Clinical Pharmacology"
+        --
+        +getDrugLevelTests(): NLKConcept[]
+        +getToxicologyTests(): NLKConcept[]
+    }
+
+    class MedisinskGenetikk {
+        +codeCount: 67
+        +displayName: "Medisinsk genetikk"
+        +description: "Medical Genetics"
+        --
+        +getGeneticTests(): NLKConcept[]
+        +getCytogeneticTests(): NLKConcept[]
+    }
+
+    class Patologi {
+        +codeCount: 27
+        +displayName: "Patologi"
+        +description: "Pathology"
+        --
+        +getHistopathologyTests(): NLKConcept[]
+        +getCytopathologyTests(): NLKConcept[]
+    }
+}
+
+package "FHIR Integration" LIGHTYELLOW {
+    class ObservationProfile {
+        +code: CodeableConcept
+        +system: "http://hl7.no/fhir/ig/nlk-test/CodeSystem/norsk-laboratoriekodeverk"
+        --
+        +validateNLKCode(): boolean
+        +getLabTestInfo(): NLKConcept
+    }
+
+    class DiagnosticReportProfile {
+        +code: CodeableConcept[]
+        +result: Observation[]
+        --
+        +addNLKObservation(nlkCode): void
+        +validateAllCodes(): boolean
+    }
+}
+
+package "Norwegian Health Context" LIGHTPINK {
+    class HL7Norway {
+        +basisPackage: "hl7.fhir.no.basis"
+        +version: "2.0.17"
+        --
+        +getNorwegianProfiles(): Profile[]
+        +getJurisdictionRules(): CodeableConcept[]
+    }
+
+    class NorwegianHealthcare {
+        +healthRegions: Region[]
+        +nationalRegistries: Registry[]
+        --
+        +standardizeLabTerminology(): void
+        +enableInteroperability(): void
+    }
+}
+
+' Relationships
+CodeSystem <|-- NorskLaboratoriekodeverk
+Property <|-- NLKProperty
+Concept <|-- NLKConcept
+
+NorskLaboratoriekodeverk *-- "11391" NLKConcept : contains
+NorskLaboratoriekodeverk *-- "11" NLKProperty : defines
+NLKConcept --> MedicalDomain : categorizedBy
+
+MedicalDomain <|.. MedisinskBiokjemi
+MedicalDomain <|.. ImmunologiTransfusjon
+MedicalDomain <|.. MedisinskMikrobiologi
+MedicalDomain <|.. KliniskFarmakologi
+MedicalDomain <|.. MedisinskGenetikk
+MedicalDomain <|.. Patologi
+
+ObservationProfile --> NorskLaboratoriekodeverk : uses
+DiagnosticReportProfile --> ObservationProfile : contains
+NorskLaboratoriekodeverk --> HL7Norway : buildUpon
+NorwegianHealthcare --> NorskLaboratoriekodeverk : standardizes
+
+' Cardinalities and notes
+note right of NorskLaboratoriekodeverk
+  **Version**: 7280.77
+  **Total Codes**: 11,391
+  **Active**: 9,679 codes
+  **Historical**: 1,712 codes
+  **Status**: Experimental
+end note
+
+note right of MedicalDomain
+  Six major medical specialties
+  covering comprehensive
+  laboratory terminology
+end note
+
+note bottom of ObservationProfile
+  FHIR R4 Observations using
+  NLK codes for laboratory
+  test identification
+end note
 
 @enduml
